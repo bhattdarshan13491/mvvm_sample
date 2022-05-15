@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_1sdp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linMonthYear"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMonth"
+            android:textColor="@color/font_light_blue"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:text="December 2021"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:id="@+id/ivDropDown"
+            android:padding="@dimen/_2sdp"
+            app:tint="@color/quoted_text_blue"
+            android:src="@drawable/ic_dropdown"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvRecords"
+        android:layout_marginBottom="@dimen/_6sdp"
+        />
+
+</LinearLayout>
+</layout>

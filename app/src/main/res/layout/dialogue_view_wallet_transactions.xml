@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/slot_card_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/font_blue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                >
+
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:id="@+id/ivAddLogo"
+                    android:src="@drawable/ic_add_member"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTitle"
+                    android:text="@string/select_doctor"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_2sdp"
+                android:id="@+id/ivClose"
+                android:src="@drawable/icon_close"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvDoctors"
+                android:layout_above="@+id/linAddNewDoctor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/linAddNewDoctor"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_12sdp"
+                android:gravity="center"
+                android:background="@color/gray_border"
+                android:layout_alignParentBottom="true"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvButtonTitle"
+                    android:text="@string/close"
+                    android:textColor="@color/font_blue"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/_12sdp"
+    android:layout_margin="@dimen/root_padding"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="Appointment cancelled successfully and refund SMS sent to your mobile."
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/rubik_regular"
+        android:textColor="@color/title_text_color"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/gray_border"/>
+
+    <Button
+        android:id="@+id/btnAppointments"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/AppCommonButton"
+        android:text="@string/go_back_to_appointments"
+        />
+
+
+</com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+</layout>

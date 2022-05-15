@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgorung_clr"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="Consultation Fee"
+                            android:textColor="@color/font_light_black" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/edFees"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:layout_toStartOf="@+id/tvConsultation"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="Fees"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:maxLines="1"
+
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/font_light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvConsultation"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:fontFamily="@font/nunito_medium"
+                                android:text="Per Consultation"
+                                android:textColor="@color/font_light_blue" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="Bank Account Details"
+                            android:textColor="@color/font_light_black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linEnterDetails"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/nov_common_input_box">
+
+                                <EditText
+                                    android:id="@+id/etBankName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:layout_marginBottom="@dimen/_6sdp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:hint="Bank Name"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:textColor="@color/font_light_blue" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/nov_common_input_box">
+
+                                <EditText
+                                    android:id="@+id/etAccountNo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:layout_marginBottom="@dimen/_6sdp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:hint="Account No"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:textColor="@color/font_light_blue" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/nov_common_input_box">
+
+                                <EditText
+                                    android:id="@+id/etName"
+                                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ."
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:layout_marginBottom="@dimen/_6sdp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:hint="Name as per Bank Details"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:textColor="@color/font_light_blue" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/nov_common_input_box">
+
+                                <EditText
+                                    android:id="@+id/etAccountType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:layout_marginBottom="@dimen/_6sdp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:hint="Account type"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:textColor="@color/font_light_blue" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/nov_common_input_box">
+
+                                <EditText
+                                    android:id="@+id/etIFSCCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:layout_marginBottom="@dimen/_6sdp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:hint="IFSC Code"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:textColor="@color/font_light_blue" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/nov_common_input_box">
+
+                                <EditText
+                                    android:id="@+id/etBranch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:layout_marginBottom="@dimen/_6sdp"
+                                    android:background="@null"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:hint="Branch"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:textColor="@color/font_light_blue" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@color/white"
+                            android:padding="@dimen/_10sdp"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvBankName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:text="Bank Details"
+                                    android:textColor="@color/font_light_blue"
+                                    android:textSize="@dimen/_14sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvStatusMessage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:text="Your bank account details have been captured successfully. Please reach to the customer care if there is any issue."
+                                    android:textColor="@color/font_light_blue" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relContinue"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:background="@drawable/button_background"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Save"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"/>
+                </LinearLayout>
+            </ScrollView>
+        </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+        <include android:id="@+id/layoutProgress" layout="@layout/progress_bar"/>
+
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+
+</layout>

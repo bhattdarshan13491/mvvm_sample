@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvVideoContainer"
+            >
+
+            <com.twilio.video.VideoView
+                android:id="@+id/primary_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/ivBack"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linThumbnail"
+                    style="@style/VideoContainers"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+
+                   >
+                    <com.twilio.video.VideoView
+                        android:id="@+id/thumbnail_video_view"
+                        android:layout_width="@dimen/thumbnail_size"
+                        android:layout_height="@dimen/thumbnail_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linGuestThumbnail"
+                    style="@style/VideoContainers"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+
+                <com.twilio.video.VideoView
+                        android:id="@+id/guest_thumbnail_video_view"
+                        android:layout_width="@dimen/thumbnail_size"
+                        android:layout_height="@dimen/thumbnail_size"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/circular_blue_bg"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/ic_back_new" />
+
+            <ImageView
+                android:id="@+id/ivReports"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:src="@drawable/ic_reports" />
+
+            <ImageView
+                android:id="@+id/ivSwitch"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/ivReports"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/ic_switch_camera" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linCOnnect"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:id="@+id/ivProfile"
+                    android:src="@drawable/ic_user_image"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/videoStatusTextview"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="Connecting.."
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:layout_centerInParent="true">
+
+
+                <ImageView
+                    android:id="@+id/ivCall"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/ic_call_disconnect" />
+
+                <ImageView
+                    android:id="@+id/ivVolume"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivCall"
+                    android:src="@drawable/volume_on" />
+
+                <ImageView
+                    android:id="@+id/ivVideo"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCall"
+                    android:src="@drawable/video_on" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:id="@+id/relFragmentContainer"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frAppointment"/>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_2sdp"
+                android:id="@+id/ivCloseContainer"
+                android:layout_margin="@dimen/_12sdp"
+                android:src="@drawable/icon_close"
+                app:tint="@color/skip_to_login_red"
+                android:layout_alignParentEnd="true"
+                />
+
+
+
+        </RelativeLayout>
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+
+    </RelativeLayout>
+
+
+</layout>

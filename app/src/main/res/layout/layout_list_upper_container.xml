@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/root_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linInstructions">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tvMainTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="@string/secure_your_records"
+                            android:textColor="@color/title_blue"
+                            android:textSize="@dimen/_15sdp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tvHide"
+                            android:text="@string/hide"
+                            android:textSize="@dimen/_10sdp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:textColor="@color/skip_to_login_red"
+                            android:layout_alignParentEnd="true"
+
+                            />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvSUbTitle"
+                        android:text="@string/now_add_your_documents_before_booking_an_appointment_with_your_doctor_and_forget_about_losing_them_again_forever"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/nunito_light"
+                        android:textColor="@color/gray_font"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_blue_bg"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:id="@+id/linUploadNow"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/rounded_gray_bg"
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:id="@+id/ivUploadNow"
+                                android:src="@drawable/ic_upload_report"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvUploadNow"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="@string/upload_now"
+                            android:textColor="@color/white"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:src="@drawable/ic_add"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linYourReports"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_light_blue_bg"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center">
+                        <RelativeLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/rouded_lightgray_bg"
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:id="@+id/ivYourReports"
+                                android:src="@drawable/ic_medical_report"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvYourReports"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="Your Reports"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvTotalRecordsCOunt"
+                            android:textSize="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="00"
+                            android:textColor="@color/white"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linTotalSize"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/rounded_gray_bg"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/upload_records_gray_bg"
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:id="@+id/ivTotalSize"
+                                android:src="@drawable/ic_total_size"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvTotalSize"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="@string/total_size"
+                            android:textColor="@color/font_gray_medium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvSizeCount"
+                            android:textSize="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="00 Mb"
+                            android:textColor="@color/font_gray_medium"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linCategoriesContainer"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linReports"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvReports"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="@string/reports"
+                            android:textColor="@color/reports_blue_title"
+                            android:textSize="@dimen/_10sdp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvReportCOunt"
+                            android:minWidth="@dimen/_30sdp"
+                            android:background="@drawable/rounded_gray_bg"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="00"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linPrescriptions"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvPrescriptions"
+                            android:fontFamily="@font/nunito_regular"
+                            android:textColor="@color/gray_font"
+                            android:text="Prescriptions"
+                            android:textSize="@dimen/_10sdp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvPrescriptionsCount"
+                            android:minWidth="@dimen/_30sdp"
+                            android:background="@drawable/rounded_gray_bg"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="00"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linBills"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvBills"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="@string/bills"
+                            android:textSize="@dimen/_10sdp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvBillsCount"
+                            android:minWidth="@dimen/_30sdp"
+                            android:background="@drawable/rounded_gray_bg"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="00"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</layout>

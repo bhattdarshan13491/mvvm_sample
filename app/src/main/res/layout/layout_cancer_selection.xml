@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/linCancerCOntainer">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer few questions to personalise your experience"
+            android:textColor="@color/font_light_black"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/select_primary_cancer_site"
+            android:textColor="@color/font_light_black"
+            android:fontFamily="@font/nunito_medium"
+            android:textSize="@dimen/_12sdp"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/spPrmarySite"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivDropDownOne" />
+
+            <ImageView
+                android:id="@+id/ivDropDownOne"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_dropdown_full" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Select primary cancer location"
+            android:textColor="@color/font_light_black"
+            android:fontFamily="@font/nunito_medium"
+            android:textSize="@dimen/_12sdp"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/spPrmaryLocation"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivDropDownTwo" />
+
+            <ImageView
+                android:id="@+id/ivDropDownTwo"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_dropdown_full" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Select Cancer Stage"
+            android:textColor="@color/font_light_black"
+            android:fontFamily="@font/nunito_medium"
+            android:textSize="@dimen/_12sdp"/>
+
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/spCancerSTage"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivDropDownThree"
+                android:entries="@array/cancer_stage"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp" />
+
+            <ImageView
+                android:id="@+id/ivDropDownThree"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_dropdown_full" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

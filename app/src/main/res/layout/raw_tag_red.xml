@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:id="@+id/tvTag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minWidth="@dimen/_50sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    android:paddingTop="@dimen/_2sdp"
+    android:paddingBottom="@dimen/_2sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:text="Prescriptions"
+    android:background="@drawable/badge_background_red"
+    android:textColor="@color/font_light_blue"
+    android:fontFamily="@font/nunito_semi_bold"
+    android:textSize="@dimen/_10sdp" />
+
+</layout>

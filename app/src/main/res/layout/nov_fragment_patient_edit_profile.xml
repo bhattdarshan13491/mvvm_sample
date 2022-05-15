@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layoutHeader"
+                layout="@layout/layout_nov_header" />
+
+               <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/linBasicInfo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp">
+
+                                <TextView
+                                    android:id="@+id/tvBasicInfo"
+                                    style="@style/NovAppointmentsTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/basic_info" />
+
+                                <ImageView
+                                    android:id="@+id/ivBasicInfoLine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@color/purple_700" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linABoutCancer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp">
+
+                                <TextView
+                                    android:id="@+id/tvAboutCancer"
+                                    style="@style/NovAppointmentsTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/about_cancer"
+                                    android:textColor="@color/gray_font" />
+
+                                <ImageView
+                                    android:id="@+id/ivAboutCancer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@color/nov_line_gray" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linMyCareGivers"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp">
+
+                                <TextView
+                                    android:id="@+id/tvMyCareGivers"
+                                    style="@style/NovAppointmentsTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/my_caregivers"
+                                    android:textColor="@color/gray_font" />
+
+                                <ImageView
+                                    android:id="@+id/ivMyCareGivers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@color/nov_line_gray" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/lightest_bg"
+                            android:padding="@dimen/_12sdp">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_above="@+id/tvSave"
+                                android:fillViewport="true">
+
+                                <RelativeLayout
+                                    android:id="@+id/relLayoutContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <include
+                                        android:id="@+id/layoutasicinfo"
+                                        android:visibility="gone"
+                                        layout="@layout/layout_patient_edit_basic_info" />
+
+                                    <include
+                                        android:id="@+id/layOutCancer"
+                                        layout="@layout/layout_cancer_selection"
+                                        android:visibility="gone" />
+
+                                    <include
+                                        android:id="@+id/layOutMyCG"
+                                        layout="@layout/layout_my_care_givers"
+                                        android:visibility="gone" />
+
+
+                                </RelativeLayout>
+
+                            </ScrollView>
+
+
+                            <TextView
+                                android:id="@+id/tvSave"
+                                style="@style/NovAppCommonButton"
+                                android:layout_width="@dimen/_190sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/save" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+        </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+        <include
+            android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar" />
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

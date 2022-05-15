@@ -1,0 +1,838 @@
+{
+  "superTagList": [
+    {
+      "id": 1,
+      "name": "Haematology",
+      "subTagsListing": [
+        {
+          "alternativeNames": [
+            {
+              "id": 2,
+              "name": "Complete Blood Count"
+            }
+          ],
+          "id": 3,
+          "name": "CBC"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 4,
+              "name": "Prothrombin Time Test"
+            }
+          ],
+          "id": 5,
+          "name": "PT Test"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 6,
+              "name": "Partial Thromboplastin Time Test"
+            }
+          ],
+          "id": 7,
+          "name": "PTT Test"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 8,
+              "name": "activated Partial Thromboplastin Time Test"
+            }
+          ],
+          "id": 9,
+          "name": "aPTT Test"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 10,
+              "name": "Ertythrocyte Sedimentation Rate Test"
+            }
+          ],
+          "id": 11,
+          "name": "ECR Test"
+        },
+        {
+          "id": 12,
+          "name": "D-dimer"
+        }
+      ]
+    },
+    {
+      "alternattiveNames": [
+        {
+          "id": 13,
+          "name": "Biochemistry"
+        }
+      ],
+      "id": 14,
+      "name": "Clinical Biochemistry",
+      "subTagsListing": [
+        {
+          "id": 15,
+          "name": "Amylase"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 16,
+              "name": "Liver Function test"
+            }
+          ],
+          "id": 17,
+          "name": "LFT"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 18,
+              "name": "Kidney Function Test"
+            },
+            {
+              "id": 19,
+              "name": "Creatinine"
+            }
+          ],
+          "id": 20,
+          "name": "KFT"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 21,
+              "name": "Renal Function Test"
+            },
+            {
+              "id": 22,
+              "name": "Creatinine"
+            }
+          ],
+          "id": 23,
+          "name": "RFT"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 24,
+              "name": "Total cholesterol"
+            },
+            {
+              "id": 25,
+              "name": "Triglycerides"
+            },
+            {
+              "id": 26,
+              "name": "LDL"
+            },
+            {
+              "id": 27,
+              "name": "HDL"
+            },
+            {
+              "id": 28,
+              "name": "VLDL"
+            }
+          ],
+          "id": 29,
+          "name": "Lipid Profile"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 30,
+              "name": "PET Scan"
+            },
+            {
+              "id": 31,
+              "name": "Sodium"
+            },
+            {
+              "id": 32,
+              "name": "Potassium"
+            }
+          ],
+          "id": 33,
+          "name": "Electrolytes"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 34,
+              "name": "Luteinizing Hormone Test"
+            }
+          ],
+          "id": 35,
+          "name": "LH"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 36,
+              "name": "Follicle Stimulating Hormone Test"
+            }
+          ],
+          "id": 37,
+          "name": "FSH"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 38,
+              "name": "HBA1C"
+            },
+            {
+              "id": 39,
+              "name": "FBS (Fasting Blood Sugar)"
+            },
+            {
+              "id": 40,
+              "name": "  RBS (Random Blood Sugar)"
+            }
+          ],
+          "id": 41,
+          "name": "Blood Sugar Tests"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 42,
+              "name": "Human chorionic gonadotropin"
+            }
+          ],
+          "id": 43,
+          "name": "Beta HCG"
+        },
+        {
+          "id": 44,
+          "name": "Cortisol"
+        },
+        {
+          "id": 45,
+          "name": "Prolactin"
+        },
+        {
+          "id": 46,
+          "name": "Testosterone"
+        },
+        {
+          "id": 47,
+          "name": "Progesteron"
+        },
+        {
+          "id": 48,
+          "name": "Cholinesterase"
+        },
+        {
+          "id": 49,
+          "name": "Creatinine"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 50,
+              "name": "Thyroid Profile"
+            }
+          ],
+          "id": 51,
+          "name": "TSH"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 53,
+              "name": "Thyroid Profile"
+            }
+          ],
+          "id": 53,
+          "name": "T3"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 54,
+              "name": "Thyroid Profile"
+            }
+          ],
+          "id": 55,
+          "name": "T4"
+        }
+      ]
+    },
+    {
+      "alternattiveNames": [
+        {
+          "id": 56,
+          "name": "Imaging"
+        }
+      ],
+      "id": 57,
+      "name": "Radiology",
+      "subTagsListing": [
+        {
+          "id": 58,
+          "name": "X-Ray"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 59,
+              "name": "CECT"
+            },
+            {
+              "id": 60,
+              "name": "MDCT"
+            }
+          ],
+          "id": 61,
+          "name": "CT Scan"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 62,
+              "name": "Magnetic Resonance Imaging Test"
+            }
+          ],
+          "id": 63,
+          "name": "MRI"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 64,
+              "name": "USG"
+            }
+          ],
+          "id": 65,
+          "name": "Ultrasound"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 66,
+              "name": "PET Scan"
+            },
+            {
+              "id": 67,
+              "name": "Positron Emission Tomography and Computed Tomography"
+            }
+          ],
+          "id": 68,
+          "name": "PET CT"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 69,
+              "name": "Magnetic Resonance Cholangiopancreatography"
+            }
+          ],
+          "id": 70,
+          "name": "MRCP"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 71,
+              "name": "Endoscopic Retrograde Cholangiopancreatography"
+            }
+          ],
+          "id": 72,
+          "name": "ERCP"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 73,
+              "name": "3D-Echo"
+            },
+            {
+              "id": 74,
+              "name": "3D-Echocardiography"
+            },
+            {
+              "id": 75,
+              "name": " 2D-Echo"
+            },
+            {
+              "id": 76,
+              "name": "2D-Echocardiography"
+            }
+          ],
+          "id": 77,
+          "name": "Echo"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 78,
+              "name": "BMD"
+            }
+          ],
+          "id": 79,
+          "name": "Bone Scan"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 80,
+              "name": "Transrectal ultrasound"
+            }
+          ],
+          "id": 81,
+          "name": "TRUS"
+        },
+        {
+          "id": 82,
+          "name": "Gallium Scan"
+        },
+        {
+          "id": 83,
+          "name": "Scintigraphy"
+        },
+        {
+          "id": 84,
+          "name": "Mammography"
+        },
+        {
+          "id": 85,
+          "name": "Thyroid Scans"
+        },
+        {
+          "id": 86,
+          "name": "Doppler Test"
+        }
+      ]
+    },
+    {
+      "alternattiveNames": [
+        {
+          "id": 87,
+          "name": "Discharge Summary"
+        },
+        {
+          "id": 88,
+          "name": "Discharge Slip"
+        }
+      ],
+      "id": 89,
+      "name": "Treatment Summary",
+      "subTagsListing": [
+        {
+          "id": 90,
+          "name": "Chemotherapy"
+        },
+        {
+          "id": 91,
+          "name": "Radiotherapy"
+        },
+        {
+          "id": 92,
+          "name": "Targeted therapy"
+        },
+        {
+          "id": 93,
+          "name": "Immunotherapy"
+        },
+        {
+          "id": 94,
+          "name": "Palliative care"
+        },
+        {
+          "id": 95,
+          "name": "Surgery"
+        },
+        {
+          "id": 96,
+          "name": "Supportive Care"
+        },
+        {
+          "id": 97,
+          "name": "Ablative therapy"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 98,
+              "name": "Endocrine therapy"
+            }
+          ],
+          "id": 99,
+          "name": "Hormonal Therapy"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Molecular Marker",
+      "subTagsListing": [
+        {
+          "alternativeNames": [
+            {
+              "id": 101,
+              "name": "Immunohistochemistry Test"
+            }
+          ],
+          "id": 102,
+          "name": "IHC"
+        },
+        {
+          "id": 104,
+          "name": "FISH"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 105,
+              "name": "Polymerase Chain Reaction"
+            },
+            {
+              "id": 106,
+              "name": "RT-PCR"
+            }
+          ],
+          "id": 107,
+          "name": "PCR"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 108,
+              "name": "Next Generation Sequencing"
+            },
+            {
+              "id": 109,
+              "name": "Genetic Test"
+            },
+            {
+              "id": 110,
+              "name": "DNA Report"
+            }
+          ],
+          "id": 111,
+          "name": "NGS"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 112,
+              "name": "Oncotype Dx"
+            },
+            {
+              "id": 113,
+              "name": "Mammaprint"
+            }
+          ],
+          "id": 114,
+          "name": "Multigene expression analysis"
+        },
+        {
+          "id": 115,
+          "name": "Microarray"
+        },
+        {
+          "id": 116,
+          "name": "Methylation markers"
+        },
+        {
+          "id": 117,
+          "name": "PD-L1"
+        },
+        {
+          "id": 118,
+          "name": "ALK"
+        },
+        {
+          "id": 119,
+          "name": "ROS"
+        },
+        {
+          "id": 120,
+          "name": "BRAF"
+        },
+        {
+          "id": 121,
+          "name": "Cytogenetics"
+        }
+      ]
+    },
+    {
+      "alternattiveNames": [
+        {
+          "id": 122,
+          "name": "HPE"
+        },
+        {
+          "id": 123,
+          "name": "Cytopathology"
+        }
+      ],
+      "id": 124,
+      "name": "Histopathology Report",
+      "subTagsListing": [
+        {
+          "id": 125,
+          "name": "FNAC"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 126,
+              "name": "PAP Smear"
+            }
+          ],
+          "id": 127,
+          "name": "PAP Test"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 128,
+              "name": "Dilation and curettage (D&C)/Lymph node dissection"
+            }
+          ],
+          "id": 129,
+          "name": "Biopsy"
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "Endoscopy",
+      "subTagsListing": [
+        {
+          "id": 131,
+          "name": "Colonoscopy"
+        },
+        {
+          "id": 132,
+          "name": "Cystoscopy"
+        },
+        {
+          "id": 133,
+          "name": "Hysteroscopy"
+        },
+        {
+          "id": 134,
+          "name": "Laparoscopy"
+        },
+        {
+          "id": 135,
+          "name": "Laryngeoscopy"
+        },
+        {
+          "id": 136,
+          "name": "Sigmoidoscopy"
+        },
+        {
+          "id": 137,
+          "name": "Gastroscopy"
+        },
+        {
+          "id": 138,
+          "name": "Bronchoscopy"
+        },
+        {
+          "id": 139,
+          "name": "Fluoroscopy"
+        },
+        {
+          "id": 140,
+          "name": "Cholangiogram"
+        },
+        {
+          "id": 141,
+          "name": "Proctoscopy"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 142,
+              "name": "Hysterosalpingography"
+            }
+          ],
+          "id": 143,
+          "name": "HSG"
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "name": "Serum Biomarker",
+      "subTagsListing": [
+        {
+          "id": 145,
+          "name": "CEA"
+        },
+        {
+          "id": 146,
+          "name": "CA19-9"
+        },
+        {
+          "id": 147,
+          "name": "AFP"
+        },
+        {
+          "id": 148,
+          "name": "B2M"
+        },
+        {
+          "id": 149,
+          "name": "CA125"
+        },
+        {
+          "id": 150,
+          "name": "CA15-3"
+        },
+        {
+          "id": 151,
+          "name": "Beta hCG"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 152,
+              "name": "Prostate-Specific Antigen Test"
+            }
+          ],
+          "id": 153,
+          "name": "PSA"
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "name": "Others",
+      "subTagsListing": [
+        {
+          "alternativeNames": [
+            {
+              "id": 155,
+              "name": "Tread Mill Test"
+            }
+          ],
+          "id": 156,
+          "name": "TMT"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 157,
+              "name": "Electro Cardio Gram"
+            }
+          ],
+          "id": 158,
+          "name": "ECG"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 159,
+              "name": "Culture and sensitivity"
+            }
+          ],
+          "id": 160,
+          "name": "Microbiology"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 161,
+              "name": "Cerebro-Spinal Fluid Test"
+            }
+          ],
+          "id": 162,
+          "name": "CSF Test"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 163,
+              "name": "Human Immunodeficiency Virus Test"
+            }
+          ],
+          "id": 164,
+          "name": "HIV"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 165,
+              "name": "Hepatitis B Virus Test"
+            }
+          ],
+          "id": 166,
+          "name": "HBV"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 167,
+              "name": "Hepatitis C Virus Test"
+            }
+          ],
+          "id": 168,
+          "name": "HCV"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 169,
+              "name": "Human Papilloma Virus"
+            }
+          ],
+          "id": 170,
+          "name": "HPV"
+        },
+        {
+          "alternativeNames": [
+            {
+              "id": 171,
+              "name": "Epstein Barr Virus"
+            }
+          ],
+          "id": 172,
+          "name": "EBV"
+        },
+        {
+          "id": 173,
+          "name": "Urine Analysis"
+        },
+        {
+          "id": 174,
+          "name": "Barium Enema"
+        },
+        {
+          "id": 175,
+          "name": "Fecal Occult Blood"
+        },
+        {
+          "id": 176,
+          "name": "Lung function test"
+        },
+        {
+          "id": 177,
+          "name": "Clinical breast examination"
+        }
+      ]
+    },
+    {
+      "alternattiveNames": [
+        {
+          "id": 178,
+          "name": "Case sheet"
+        }
+      ],
+      "id": 179,
+      "name": "Doctor's note",
+      "subTagsListing": [
+        {
+          "id": 180,
+          "name": "Doctor's note"
+        }
+      ]
+    }
+  ]
+}

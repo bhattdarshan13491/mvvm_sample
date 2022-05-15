@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linProfileTItle"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/_12sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:src="@drawable/ic_back_blue"
+                        app:tint="@color/splash_title_color" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="Profile Details"
+                        android:textColor="@color/font_light_black"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivStep"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/ic_1_of_6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivStep"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCurrentStep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Personal Information"
+                            android:textColor="@color/font_light_blue"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvNextStep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:text="Next : Experience and Specialization "
+                            android:textColor="@color/nov_title_font_gray"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+                <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightest_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_36sdp"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:id="@+id/ivProfile"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:src="@drawable/ic_user_image" />
+
+                            <ImageView
+                                android:id="@+id/ivEdit"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="bottom|end"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:src="@drawable/ic_update_profile_pic" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_medium"
+                                android:text="Name"
+                                android:textColor="@color/font_light_black" />
+
+
+                            <RelativeLayout
+                                style="@style/NovCommonEditTextBoxContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_6sdp">
+
+                                <EditText
+                                    android:id="@+id/edName"
+                                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ."
+                                    style="@style/NovCommonEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:hint="Enter the name"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textMultiLine" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/EditProfileTitle"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/mobile_no"/>
+
+                        <RelativeLayout
+                            style="@style/NovCommonEditTextBoxContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/ivPhone"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_mobile_no" />
+
+                            <EditText
+                                android:id="@+id/edPhoneNumber"
+                                style="@style/NovCommonEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/ivPhone"
+                                android:clickable="true"
+                                android:digits="0123456789"
+                                android:focusable="false"
+                                android:hint="Mobile No"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/EditProfileTitle"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/email"/>
+
+                        <RelativeLayout
+                            style="@style/NovCommonEditTextBoxContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/ivemail"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_email_blue" />
+
+                            <EditText
+                                android:id="@+id/edEmail"
+                                style="@style/NovCommonEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/ivemail"
+                                android:hint="Email ID"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_medium"
+                                android:text="DOB"
+                                android:textColor="@color/font_light_black" />
+
+
+                            <RelativeLayout
+                                style="@style/NovCommonEditTextBoxContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/relDob"
+                                android:layout_marginTop="@dimen/_6sdp">
+
+                                <TextView
+                                    android:id="@+id/tvDob"
+                                    style="@style/NovCommonEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:hint="yyyy-MM-dd" />
+
+                                <ImageView
+                                    android:id="@+id/ivCalender"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/calender_icon" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/tvSave"
+                                style="@style/NovAppCommonButton"
+                                android:layout_gravity="end"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/button_background"
+                                android:text="@string/save" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+            </ScrollView>
+        </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+        <include android:id="@+id/layoutProgress" layout="@layout/progress_bar"/>
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+
+</layout>

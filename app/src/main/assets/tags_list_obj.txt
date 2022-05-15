@@ -1,0 +1,430 @@
+{
+  "success": true,
+  "message": "Tag list retrieved successfully.",
+  "data": [
+    {
+      "id": 0,
+      "name": "TMT"
+    },
+    {
+      "id": 1,
+      "name": "ECG"
+    },
+    {
+      "id": 2,
+      "name": "Biochemistry"
+    },
+    {
+      "id": 3,
+      "name": "Microbiology"
+    },
+    {
+      "id": 4,
+      "name": "FVL Tidal Test"
+    },
+    {
+      "id": 5,
+      "name": "PAP Test"
+    },
+    {
+      "id": 6,
+      "name": "Digital Rectum Exam"
+    },
+    {
+      "id": 7,
+      "name": "DRE"
+    },
+    {
+      "id": 8,
+      "name": "Barium Enema"
+    },
+    {
+      "id": 9,
+      "name": "Pharmacy Bills"
+    },
+    {
+      "id": 10,
+      "name": "Prescriptions"
+    },
+    {
+      "id": 11,
+      "name": "Hospital Bills"
+    },
+    {
+      "id": 12,
+      "name": "Renal Profile"
+    },
+    {
+      "id": 13,
+      "name": "Hepatic Panel Test"
+    },
+    {
+      "id": 14,
+      "name": "Diabetes Panel"
+    },
+    {
+      "id": 15,
+      "name": "Cardiac Panel"
+    },
+    {
+      "id": 16,
+      "name": "Full body health Checkup"
+    },
+    {
+      "id": 17,
+      "name": "Cancer Screening test"
+    },
+    {
+      "id": 18,
+      "name": "Blood Test"
+    },
+    {
+      "id": 19,
+      "name": "CBC"
+    },
+    {
+      "id": 20,
+      "name": "Complete Blood Count"
+    },
+    {
+      "id": 21,
+      "name": "Blood Chemistry"
+    },
+    {
+      "id": 22,
+      "name": "Immunology"
+    },
+    {
+      "id": 23,
+      "name": "Serology"
+    },
+    {
+      "id": 24,
+      "name": "Immunohistochemistry"
+    },
+    {
+      "id": 25,
+      "name": "IHC"
+    },
+    {
+      "id": 26,
+      "name": "FISH"
+    },
+    {
+      "id": 27,
+      "name": "Occult Blood Test"
+    },
+    {
+      "id": 28,
+      "name": "USG Guided Biopsy"
+    },
+    {
+      "id": 29,
+      "name": "CT Guided Biopsy"
+    },
+    {
+      "id": 30,
+      "name": "MRI Guided Biopsy"
+    },
+    {
+      "id": 31,
+      "name": "Histopathology"
+    },
+    {
+      "id": 32,
+      "name": "HPE"
+    },
+    {
+      "id": 33,
+      "name": "Surgical Histopath"
+    },
+    {
+      "id": 34,
+      "name": "Surgical HPE"
+    },
+    {
+      "id": 35,
+      "name": "Tru-cut needle biopsy"
+    },
+    {
+      "id": 36,
+      "name": "FNAC"
+    },
+    {
+      "id": 37,
+      "name": "Fine needle aspiration cytology"
+    },
+    {
+      "id": 38,
+      "name": "Bone marrow aspiration"
+    },
+    {
+      "id": 39,
+      "name": "X-Ray"
+    },
+    {
+      "id": 40,
+      "name": "CT Scan"
+    },
+    {
+      "id": 41,
+      "name": "MRI"
+    },
+    {
+      "id": 42,
+      "name": "Ultrasound"
+    },
+    {
+      "id": 43,
+      "name": "PET CT"
+    },
+    {
+      "id": 44,
+      "name": "PSMA PET"
+    },
+    {
+      "id": 45,
+      "name": "PET Scan"
+    },
+    {
+      "id": 46,
+      "name": "USG"
+    },
+    {
+      "id": 47,
+      "name": "Mammography"
+    },
+    {
+      "id": 48,
+      "name": "Echo"
+    },
+    {
+      "id": 49,
+      "name": "Endoscopy"
+    },
+    {
+      "id": 50,
+      "name": "Bone Scan"
+    },
+    {
+      "id": 51,
+      "name": "Gallium Scan"
+    },
+    {
+      "id": 52,
+      "name": "Thyroid Scans"
+    },
+    {
+      "id": 53,
+      "name": "Endoscopy"
+    },
+    {
+      "id": 54,
+      "name": "Bronchoscopy"
+    },
+    {
+      "id": 55,
+      "name": "Colonoscopy"
+    },
+    {
+      "id": 56,
+      "name": "Cystoscopy"
+    },
+    {
+      "id": 57,
+      "name": "Hysteroscopy"
+    },
+    {
+      "id": 58,
+      "name": "Laparoscopy"
+    },
+    {
+      "id": 59,
+      "name": "Laryngeoscopy"
+    },
+    {
+      "id": 60,
+      "name": "Sigmoidoscopy"
+    },
+    {
+      "id": 61,
+      "name": "BMD"
+    },
+    {
+      "id": 62,
+      "name": "Scintigraphy"
+    },
+    {
+      "id": 63,
+      "name": "Gastroscopy"
+    },
+    {
+      "id": 64,
+      "name": "Chemotherapy"
+    },
+    {
+      "id": 65,
+      "name": "Radiotherapy"
+    },
+    {
+      "id": 66,
+      "name": "Surgical"
+    },
+    {
+      "id": 67,
+      "name": "Targeted therapy"
+    },
+    {
+      "id": 68,
+      "name": "Immunotherapy"
+    },
+    {
+      "id": 69,
+      "name": "Palliative care"
+    },
+    {
+      "id": 70,
+      "name": "Hormonal Therapy"
+    },
+    {
+      "id": 71,
+      "name": "Medical History"
+    },
+    {
+      "id": 72,
+      "name": "Case History"
+    },
+    {
+      "id": 73,
+      "name": "Case Summary"
+    },
+    {
+      "id": 74,
+      "name": "Genetic test"
+    },
+    {
+      "id": 75,
+      "name": "PDL-1"
+    },
+    {
+      "id": 76,
+      "name": "Somatic NGS Panel"
+    },
+    {
+      "id": 77,
+      "name": "Target IO"
+    },
+    {
+      "id": 78,
+      "name": "Lung Panel"
+    },
+    {
+      "id": 79,
+      "name": "Target Absolute"
+    },
+    {
+      "id": 80,
+      "name": "Core"
+    },
+    {
+      "id": 81,
+      "name": "Target Focus"
+    },
+    {
+      "id": 82,
+      "name": "Exome"
+    },
+    {
+      "id": 83,
+      "name": "Germline NGS Panel"
+    },
+    {
+      "id": 84,
+      "name": "Single Gene Marker"
+    },
+    {
+      "id": 85,
+      "name": "BRAF"
+    },
+    {
+      "id": 86,
+      "name": "KRAS"
+    },
+    {
+      "id": 87,
+      "name": "EGFR"
+    },
+    {
+      "id": 88,
+      "name": "BRCA 1"
+    },
+    {
+      "id": 89,
+      "name": "BRCA 2"
+    },
+    {
+      "id": 90,
+      "name": "p53"
+    },
+    {
+      "id": 91,
+      "name": "TP53"
+    },
+    {
+      "id": 92,
+      "name": "Her2nu"
+    },
+    {
+      "id": 93,
+      "name": "ER-PR"
+    },
+    {
+      "id": 94,
+      "name": "CEA"
+    },
+    {
+      "id": 95,
+      "name": "CA19-9"
+    },
+    {
+      "id": 96,
+      "name": "AFP"
+    },
+    {
+      "id": 97,
+      "name": "B2M"
+    },
+    {
+      "id": 98,
+      "name": "CA125"
+    },
+    {
+      "id": 99,
+      "name": "CA15-3"
+    },
+    {
+      "id": 100,
+      "name": "Beta hCG"
+    },
+    {
+      "id": 101,
+      "name": "PSA"
+    },
+    {
+      "id": 102,
+      "name": "Test/Scan"
+    },
+    {
+      "id": 103,
+      "name": "Consultation"
+    },
+    {
+      "id": 104,
+      "name": "Treatment"
+    },
+    {
+      "id": 105,
+      "name": "Medicine"
+    }
+  ]
+}

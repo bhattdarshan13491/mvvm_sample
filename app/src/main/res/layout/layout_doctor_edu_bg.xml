@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightest_bg">
+
+        <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+        <include layout="@layout/layout_doctor_ac_setup_header" android:id="@+id/layoutAcSetup"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:padding="@dimen/_12sdp"
+        android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/llDegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/recyclerView"
+            android:layout_marginTop="@dimen/_6sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Select Degree"
+                android:textColor="@color/font_light_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/nov_common_input_box">
+
+                <Spinner
+                    android:id="@+id/spDegree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_toStartOf="@+id/ivDropDownDegree"
+                    android:background="@null"
+                    android:entries="@array/degrees_array"
+                    android:paddingStart="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/ivDropDownDegree"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_dropdown_full"
+                    app:tint="@color/font_light_blue" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llDegree"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Select Branch"
+                android:textColor="@color/font_light_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/nov_common_input_box">
+
+                <Spinner
+                    android:id="@+id/spBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_toStartOf="@+id/ivDropDownBranch"
+                    android:background="@null"
+                    android:entries="@array/branch"
+                    android:paddingStart="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/ivDropDownBranch"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_dropdown_full"
+                    app:tint="@color/font_light_blue" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linAddMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llBranch"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/slot_card_bg"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_outline_add_box" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="Add More"
+                    android:textColor="@color/font_light_blue" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linAddMore"
+                android:id="@+id/relSaveDegree"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/button_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Save Degree"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/relContinue"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relSaveDegree"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:background="@drawable/button_background"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvContinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/continue_1"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/ivContinue"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_3sdp"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back_blue"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/relSave"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linAddMore"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:background="@drawable/button_background"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/save"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+    </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+        <include
+            android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar" />
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

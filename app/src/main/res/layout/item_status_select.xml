@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/nov_common_input_box">
+        <ImageView
+            android:id="@+id/ivDot"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_8sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_blue_dot"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:tint="@color/font_light_blue"/>
+
+        <Spinner
+            android:layout_toRightOf="@+id/ivDot"
+            android:id="@+id/spStatus"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:background="@null"
+            android:entries="@array/status"
+            android:paddingStart="@dimen/_10sdp" />
+
+        <ImageView
+            android:layout_toRightOf="@+id/spStatus"
+            android:id="@+id/ivDropDown"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_dropdown_full"
+            app:tint="@color/font_light_blue" />
+
+    </RelativeLayout>
+
+</layout>

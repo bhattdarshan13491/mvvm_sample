@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+        <include layout="@layout/layout_doctor_ac_setup_header" android:id="@+id/layoutAcSetup"/>
+
+
+        <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightest_bg"
+        android:paddingStart="@dimen/_36sdp"
+        android:paddingEnd="@dimen/_36sdp"
+        android:paddingTop="@dimen/_14sdp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Upload Documents"
+                android:textColor="@color/font_light_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relUploadDOcument"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/nov_common_input_box">
+
+                <TextView
+                    android:id="@+id/tvUploadCerti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="Upload Educational Certificates"
+                    android:textColor="@color/font_light_blue" />
+
+                <ImageView
+                    android:id="@+id/ivUpload"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/upload" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/llCouncil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Registration Number"
+                android:textColor="@color/font_light_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/nov_common_input_box">
+
+                <EditText
+                    android:id="@+id/etRegNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito_medium"
+                    android:hint="Registration Number"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/font_light_blue" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llCouncil"
+            android:layout_below="@+id/llUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Council Registered with"
+                android:textColor="@color/font_light_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/nov_common_input_box">
+
+
+                <Spinner
+                    android:id="@+id/spCouncil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_toStartOf="@+id/ivDropDownOne"
+                    android:background="@null"
+                    android:entries="@array/council"
+                    android:paddingStart="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/ivDropDownOne"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_dropdown_full"
+                    app:tint="@color/font_light_blue" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/relContinue"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:background="@drawable/button_background"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/continue_1"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/ivContinue"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_3sdp"
+                android:rotation="180"
+                android:src="@drawable/ic_back_blue"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvSave"
+                style="@style/NovAppCommonButton"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:background="@drawable/button_background"
+                android:visibility="gone"
+                android:text="@string/save" />
+
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layput_header_2"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/add_comment_bg"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:lines="3"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:id="@+id/edComment"
+                    android:background="@null"
+                    android:hint="Write a comment here!"
+                    android:gravity="top|start"
+                    android:padding="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:layout_toStartOf="@+id/ivReply"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/ivReply"
+                    android:src="@drawable/iv_send_comment"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switchAnonymous"
+                    android:padding="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anonymous"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                android:textColor="@color/forums_card_gray"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/nunito_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tvCommentsCount"
+                android:minWidth="@dimen/_30sdp"
+                android:background="@drawable/rounded_gray_bg"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/nunito_regular"
+                android:text="00"
+                android:textSize="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvComments"/>
+
+        </LinearLayout>
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+</com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+</layout>

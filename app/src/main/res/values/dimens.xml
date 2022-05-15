@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="root_padding">@dimen/_12sdp</dimen>
+
+    <!--medical records title icons-->
+    <dimen name="medical_records_title_icons_size">@dimen/_27sdp</dimen>
+    <!---->
+
+    <!--choose options-->
+
+    <!---->
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="thumbnail_size">@dimen/_50sdp</dimen>
+    <dimen name="patient_profile_arrow_size">@dimen/_20sdp</dimen>
+    <dimen name="patient_details_icon_size">@dimen/_20sdp</dimen>
+    <dimen name="schedule_profile_box_size">@dimen/_20sdp</dimen>
+    <dimen name="bottom_dialogue_icon_size">@dimen/_50sdp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+</resources>

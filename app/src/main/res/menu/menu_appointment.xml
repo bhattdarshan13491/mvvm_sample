@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_request_callback"
+        android:icon="@drawable/ic_call_back_blue_96"
+        android:title="Request Call Back" />
+
+    <item
+        android:id="@+id/menu_chat"
+        android:icon="@drawable/ic_chat_blue_96"
+        android:title="Chat" />
+
+</menu>

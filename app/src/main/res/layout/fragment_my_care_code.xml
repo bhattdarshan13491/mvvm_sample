@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightest_bg"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_12sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMyDoctors"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_12sdp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/my_care_code"
+                                android:fontFamily="@font/nunito_bold"
+                                android:textColor="@color/font_light_blue"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/linShare"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvShare"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:gravity="center_vertical"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="Share"
+                                    android:textColor="@color/font_light_blue" />
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_share_new"
+                                    />
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightest_bg"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:padding="@dimen/_12sdp"
+                            android:id="@+id/tvMyCode"
+                            android:text="2222"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="@color/font_light_blue"
+                            android:textSize="@dimen/_24sdp"
+                            android:maxLines="1"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+        </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

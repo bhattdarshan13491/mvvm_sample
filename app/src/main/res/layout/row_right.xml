@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relChatRight"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_toLeftOf="@id/ivReceiverProfile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReceiverMessage"
+                style="@style/ChatMsgStyle"
+                android:maxWidth="@dimen/_210sdp"
+                android:background="@drawable/bg_right_msg"
+                android:layout_alignParentEnd="true"
+                android:text="Sendexxxr"
+                android:singleLine="false"
+                android:textSize="@dimen/_11sdp"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/chat_right_font" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ivReceiverProfile"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_user_image" />
+
+
+
+    </RelativeLayout>
+</layout>

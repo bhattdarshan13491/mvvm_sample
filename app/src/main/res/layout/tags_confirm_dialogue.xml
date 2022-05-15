@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/_7sdp"
+        android:background="@drawable/slot_card_bg"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/ivLogo"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/circular_tick" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitleText"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Before saving, Please confirm tags are matched correctly."
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/nunito_regular"
+            android:textColor="@color/title_text_color"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/gray_border"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/linNo"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                >
+                <Button
+                    android:id="@+id/btnNo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    style="@style/AppCommonButton"
+                    android:background="@drawable/medical_records_card"
+                    android:textColor="@color/text_dark_gray"
+                    android:text="@string/check_tags"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/linYes"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp">
+                <Button
+                    android:id="@+id/btnYes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    style="@style/AppCommonButton"
+                    android:background="@drawable/rounded_blue_bg"
+                    android:text="@string/yes"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+</com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+
+</layout>

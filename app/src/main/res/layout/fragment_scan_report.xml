@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linTitleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_shadow"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    style="@style/TitleBackButton" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/scan_report" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tvSave"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="@dimen/_12sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvPictureMode"
+                        android:background="@drawable/blue_border_white_bg"
+                        android:text="Camera"
+                        android:fontFamily="@font/nunito_regular"
+                        android:drawableEnd="@drawable/ic_dropdown_72"
+                        android:padding="@dimen/_12sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="@string/selected_images"
+                        android:textColor="@color/font_blue"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/gvImages"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:numColumns="3"
+                      />
+
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.core.widget.NestedScrollView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabUpload"
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/tvSave"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                app:backgroundTint="@color/colorPrimary"
+                app:fabSize="auto"
+                app:maxImageSize="@dimen/_23sdp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvSave"
+                style="@style/CommonBottomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+
+            <include android:id="@+id/layoutProgress"
+                layout="@layout/progress_bar"/>
+        </RelativeLayout>
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+</layout>

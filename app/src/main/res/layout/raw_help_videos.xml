@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linCOntent"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/medical_records_card"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:background="@drawable/medical_records_card">
+
+            <ImageView
+                android:id="@+id/ivThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:padding="@dimen/root_padding"
+            android:id="@+id/tvTitle"
+            android:text="Title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+</layout>

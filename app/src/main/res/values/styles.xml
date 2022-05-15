@@ -1,0 +1,392 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <!--App styles-->
+
+    <style name="CommonEditTextNew">
+        <item name="background">@null</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:padding">@dimen/root_padding</item>
+
+    </style>
+
+    <style name="CommonProfileEditText">
+        <item name="background">@null</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+
+    </style>
+
+    <style name="CommonBottomButton">
+       <item name="android:paddingTop">@dimen/_15sdp</item>
+       <item name="android:paddingBottom">@dimen/_15sdp</item>
+       <item name="android:textColor">@color/white</item>
+       <item name="android:textSize">@dimen/_14sdp</item>
+       <item name="android:fontFamily">@font/nunito_regular</item>
+       <item name="android:gravity">center</item>
+       <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="CommonFloatingButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/_12sdp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="AppCommonTitle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AddMedicalRecordsTitles">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textColor">@color/font_light_black</item>
+        <item name="android:layout_marginTop">@dimen/_6sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_6sdp</item>
+    </style>
+
+    <style name="AddMedicalRecordTabs">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textSize">@dimen/_9sdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+
+    </style>
+
+
+    <style name="AppCommonButton">
+        <item name="android:background">@drawable/common_button_bg</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="CommonTextInputEditText">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/card_bg</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:paddingBottom">@dimen/_15sdp</item>
+        <item name="android:longClickable">true</item>
+    </style>
+
+    <style name="SubText_Blue">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+
+    </style>
+
+    <style name="TitleBackButton">
+        <item name="android:layout_width">@dimen/_30sdp</item>
+        <item name="android:layout_height">@dimen/_30sdp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:src">@drawable/ic_back_blue</item>
+    </style>
+
+    <style name="TitleBackButtonNew">
+        <item name="android:layout_width">@dimen/_15sdp</item>
+        <item name="android:layout_height">@dimen/_15sdp</item>
+        <item name="android:src">@drawable/ic_back_new</item>
+    </style>
+
+    <style name="TitleTextView">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/title_text_color</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:layout_marginStart">@dimen/_8sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_8sdp</item>
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialogue</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+
+    <!--    <style name="buttonStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">@dimen/_50sdp</item>
+            <item name="android:background">@drawable/rounded_corners_blue_bg</item>
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textSize">@dimen/_14sdp</item>
+            <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+        </style>-->
+    <!---->
+
+    <!--List styles-->
+
+    <style name="CommonCardView" parent="CardView">
+        <item name="android:layout_marginStart">@dimen/_12sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_4sdp</item>
+        <item name="cardElevation">@dimen/_2sdp</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ShortsCommonCardView" parent="CardView">
+        <item name="android:layout_marginStart">@dimen/_2sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_2sdp</item>
+        <item name="android:layout_marginTop">@dimen/_2sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_2sdp</item>
+        <item name="cardElevation">@dimen/_2sdp</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="CommonProfileCardView" parent="CardView">
+        <item name="cardElevation">@dimen/_2sdp</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ProfileOptionTextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/font_light_blue</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+    <style name="ProfileOptionTextViewBlack">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+    </style>
+
+    <style name="ProfileOptionRelLayout">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!---->
+
+    <!--Intro screens test-->
+
+    <style name="MainTextBlue">
+        <item name="android:textColor">@color/quoted_text_blue</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="DropdownText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+    </style>
+
+
+    <!--New styles-->
+    <!--Updated add records-->
+    <style name="CommonEditBox">
+        <item name="android:textColor">@color/font_light_black</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="maxLines">1</item>
+        <item name="android:background">@drawable/nov_common_input_box</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:layout_marginTop">@dimen/_3sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_3sdp</item>
+
+    </style>
+
+    <!---->
+
+    <!--Video call styles -->
+
+    <style name="VideoContainers">
+        <item name="android:layout_width">@dimen/_70sdp</item>
+        <item name="android:layout_height">@dimen/_70sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/_1sdp</item>
+
+
+    </style>
+
+    <!-- Doctor Edit profile styles -->
+    <style name="ScheduleProfileBox">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/no_border_gray_bg</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="ScheduleProfileText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+
+    <!-- Nov designs -->
+    <style name="RootBackground">
+        <item name="android:background">@color/lightest_bg</item>
+    </style>
+
+    <style name="NovAppCommonButton">
+        <item name="android:minWidth">@dimen/_170sdp</item>
+        <item name="android:layout_marginTop">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_6sdp</item>
+    </style>
+
+    <style name="NovCommonEditText">
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:background">@null</item>
+        <item name="maxLines">1</item>
+        <item name="android:textColor">@color/font_light_black</item>
+        <item name="android:textColorHint">@color/font_gray</item>
+    </style>
+
+    <style name="NovCommonTextViewButton">
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/splash_title_color</item>
+    </style>
+
+    <style name="NovCommonEditTextBoxContainer">
+        <item name="android:padding">@dimen/_13sdp</item>
+        <item name="android:background">@drawable/nov_common_input_box</item>
+    </style>
+
+
+    <style name="NovTitleTextView">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/title_text_color</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:layout_marginStart">@dimen/_8sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_8sdp</item>
+    </style>
+
+    <style name="BottomDialogueTextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/font_light_blue</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AddRecordInputs">
+        <item name="android:textColor">@color/font_light_blue</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:paddingStart">@dimen/_12sdp</item>
+        <item name="android:paddingEnd">@dimen/_12sdp</item>
+        <item name="android:paddingTop">@dimen/_15sdp</item>
+        <item name="android:paddingBottom">@dimen/_15sdp</item>
+        <item name="maxLines">1</item>
+        <item name="android:background">@drawable/medical_records_card</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:layout_marginTop">@dimen/_3sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_3sdp</item>
+    </style>
+
+    <style name="CommonHomeScreenTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:layout_marginStart">@dimen/_5sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+
+    </style>
+
+    <style name="FloatingTextSTyle">
+        <item name="android:textColor">@color/quoted_text_blue</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:background">@drawable/rounded_light_blue</item>
+    </style>
+    
+    <style name="NovAppointmentsTitle">
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+        <item name="android:textColor">@color/quoted_text_blue</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="NovFloatingButtonStyle">
+        <item name="android:layout_width">@dimen/_55sdp</item>
+        <item name="android:layout_height">@dimen/_55sdp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:src">@drawable/ic_fab_add_circular_blue</item>
+        <item name="android:elevation">@dimen/_30sdp</item>
+        <item name="android:layout_margin">@dimen/_16sdp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppointmentDetailsTitles">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_semi_bold</item>
+        <item name="android:textColor">@color/font_light_blue</item>
+    </style>
+
+    <style name="NovProfileTitles">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/font_light_blue</item>
+        <item name="android:layout_marginTop">@dimen/_6sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_6sdp</item>
+    </style>
+
+    <style name="ChatMsgStyle" parent="Widget.AppCompat.TextView" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+
+    </style>
+
+    <style name="EditProfileTitle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="fontFamily">@font/nunito_medium</item>
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+</resources>

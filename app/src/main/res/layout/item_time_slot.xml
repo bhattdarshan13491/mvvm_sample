@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relContainer"
+        android:background="@color/backgorung_clr">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="Slot Duration"
+                        android:textColor="@color/font_light_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/nov_common_input_box">
+
+                        <EditText
+                            android:id="@+id/edDuration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_medium"
+                            android:hint="30(Mins)"
+                            android:maxLength="2"
+                            android:padding="@dimen/_12sdp"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:textColor="@color/font_light_blue" />
+
+                        <ImageView
+                            android:id="@+id/ivClock"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_clock" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llTimeSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llSlot"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="Available Time Slots"
+                        android:textColor="@color/font_light_black" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/nunito_medium"
+                                android:text="Slot"
+                                android:textColor="@color/font_light_black" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switchAvailibility"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_marginEnd="@dimen/_6sdp"
+                                android:fontFamily="@font/nunito_medium"
+                                android:text="Availability"
+                                android:textColor="@color/font_light_black"
+                                android:textSize="@dimen/_10sdp"
+                                app:switchPadding="@dimen/_6sdp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                        </RelativeLayout>
+
+                        <HorizontalScrollView
+                            android:id="@+id/hrPatientOptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fillViewport="true"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:id="@+id/linMonday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/no_border_gray_bg"
+                                    style="@style/ScheduleProfileBox">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvMon"
+                                        android:text="@string/mon"
+                                        style="@style/ScheduleProfileText"
+                                        />
+                                    <ImageView
+                                        android:layout_width="@dimen/schedule_profile_box_size"
+                                        android:layout_height="@dimen/schedule_profile_box_size"
+                                        android:id="@+id/ivMonday"
+                                        android:src="@drawable/ic_add_red"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/linTue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/ScheduleProfileBox">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvTue"
+                                        android:text="@string/tue"
+                                        style="@style/ScheduleProfileText"
+                                        />
+                                    <ImageView
+                                        android:layout_width="@dimen/schedule_profile_box_size"
+                                        android:layout_height="@dimen/schedule_profile_box_size"
+                                        android:id="@+id/ivTue"
+                                        android:src="@drawable/ic_add_red"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        />
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linWed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/ScheduleProfileBox">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvWed"
+                                        android:text="@string/wed"
+                                        style="@style/ScheduleProfileText"
+                                        />
+                                    <ImageView
+                                        android:layout_width="@dimen/schedule_profile_box_size"
+                                        android:layout_height="@dimen/schedule_profile_box_size"
+                                        android:id="@+id/ivWed"
+                                        android:src="@drawable/ic_add_red"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        />
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linThu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/ScheduleProfileBox">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvThu"
+                                        android:text="@string/thu"
+                                        style="@style/ScheduleProfileText"
+                                        />
+                                    <ImageView
+                                        android:layout_width="@dimen/schedule_profile_box_size"
+                                        android:layout_height="@dimen/schedule_profile_box_size"
+                                        android:id="@+id/ivThu"
+                                        android:src="@drawable/ic_add_red"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        />
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linFri"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/ScheduleProfileBox">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvFri"
+                                        android:text="@string/fri"
+                                        style="@style/ScheduleProfileText"
+                                        />
+                                    <ImageView
+                                        android:layout_width="@dimen/schedule_profile_box_size"
+                                        android:layout_height="@dimen/schedule_profile_box_size"
+                                        android:id="@+id/ivFri"
+                                        android:src="@drawable/ic_add_red"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        />
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linSat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/ScheduleProfileBox">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvSat"
+                                        android:text="@string/sat"
+                                        style="@style/ScheduleProfileText"
+                                        />
+                                    <ImageView
+                                        android:layout_width="@dimen/schedule_profile_box_size"
+                                        android:layout_height="@dimen/schedule_profile_box_size"
+                                        android:id="@+id/ivSat"
+                                        android:src="@drawable/ic_add_red"
+                                        android:layout_marginTop="@dimen/_10sdp"
+
+                                        />
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linSun"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/ScheduleProfileBox">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvSun"
+                                        android:text="Sun"
+                                        style="@style/ScheduleProfileText"
+                                        />
+                                    <ImageView
+                                        android:layout_width="@dimen/schedule_profile_box_size"
+                                        android:layout_height="@dimen/schedule_profile_box_size"
+                                        android:id="@+id/ivSun"
+                                        android:src="@drawable/ic_add_red"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+
+                     <androidx.recyclerview.widget.RecyclerView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/rvTImeSlot"
+                         />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/linAddTImeSlot"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/slot_card_bg"
+                                android:gravity="center"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:paddingTop="@dimen/_6sdp"
+                                android:paddingEnd="@dimen/_20sdp"
+                                android:paddingBottom="@dimen/_6sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:src="@drawable/ic_add_new_doctor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_4sdp"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:text="ADD"
+                                    android:textColor="@color/font_light_blue" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/tvSave"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:background="@drawable/button_background"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/_30sdp"
+                                android:paddingTop="@dimen/_8sdp"
+                                android:paddingEnd="@dimen/_30sdp"
+                                android:paddingBottom="@dimen/_8sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:text="Save"
+                                    android:textColor="@color/white" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/llTimeSlot"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@drawable/button_background"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_8sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Save"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

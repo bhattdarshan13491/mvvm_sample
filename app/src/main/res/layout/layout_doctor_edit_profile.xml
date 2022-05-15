@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgorung_clr"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBasicInfo"
+                style="@style/CommonProfileCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    style="@style/ProfileOptionRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/patient_profile_arrow_size"
+                        android:layout_height="@dimen/patient_profile_arrow_size"
+                        android:src="@drawable/ic_person" />
+
+                    <TextView
+                        style="@style/ProfileOptionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:text="Basic info" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_gray_arrow"
+                            app:tint="@color/font_light_blue" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEduDetails"
+                style="@style/CommonProfileCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp">
+
+                <LinearLayout
+                    style="@style/ProfileOptionRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/patient_profile_arrow_size"
+                        android:layout_height="@dimen/patient_profile_arrow_size"
+                        android:src="@drawable/ic_education" />
+
+                    <TextView
+                        style="@style/ProfileOptionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:text="Educational Details" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/_5sdp"
+                            app:tint="@color/font_light_blue"
+                            android:src="@drawable/ic_gray_arrow" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSpecialization"
+                android:layout_marginTop="@dimen/_6sdp"
+                style="@style/CommonProfileCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    style="@style/ProfileOptionRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/patient_profile_arrow_size"
+                        android:layout_height="@dimen/patient_profile_arrow_size"
+                        android:src="@drawable/ic_specialization" />
+
+                    <TextView
+                        style="@style/ProfileOptionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:text="Specialization &amp; Experience" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_gray_arrow" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDocVerify"
+                style="@style/CommonProfileCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp">
+
+                <LinearLayout
+                    style="@style/ProfileOptionRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/patient_profile_arrow_size"
+                        android:layout_height="@dimen/patient_profile_arrow_size"
+                        android:src="@drawable/ic_documentation" />
+
+                    <TextView
+                        style="@style/ProfileOptionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:text="Documents Verification" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/_5sdp"
+                            app:tint="@color/font_light_blue"
+                            android:src="@drawable/ic_gray_arrow" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+</layout>

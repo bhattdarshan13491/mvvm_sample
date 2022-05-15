@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_700">#FF3700B3</color>
+
+
+    <color name="colorPrimary">#29489e</color>
+    <color name="colorPrimaryDark">#FF3700B3</color>
+    <color name="colorAccent">#29489e</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightest_bg">#F1F1F1</color>
+    <color name="text_dark_gray">#878787</color>
+    <color name="gray">#848088</color>
+    <color name="progress_bg">#99000000</color>
+
+
+    <color name="gray_border">#F0F0F0</color>
+    <color name="video_call_status_bg">#80333333</color>
+    <color name="card_bg">#2B2B2B</color>
+    <color name="font_gray_2">#B2B2B2</color>
+    <color name="gray_font">#939393</color>
+    <color name="light_gray">#d8d8d8</color>
+
+    <!--Medical records colors-->
+    <color name="medical_card_bg">#FBFBFB</color>
+    <color name="medical_card_border">#D3D3D3</color>
+    <color name="medical_text_gray">#939393</color>
+    <color name="title_text_color">#2b2b2b</color>
+
+    <!--Appointments colors-->
+    <color name="font_blue">#00629a</color>
+    <color name="font_gray_medium">#7c7c7c</color>
+    <color name="backgorung_clr">#F6F6F6</color>
+    <color name="light_black">#cc0a0a09</color>
+
+    <color name="green_button">#4CAF50</color>
+    <color name="green_color_button">#bd23982f</color>
+    <color name="transparent">#00ffffff</color>
+
+    <!-- Intro screen dots colors -->
+
+    <!-- dots inactive colors -->
+
+    <!-- dots active colors -->
+
+    <!---->
+    <color name="skip_to_login_red">#d32a4a</color>
+    <color name="quoted_text_blue">#29489e</color>
+    <color name="box_gray">#efefef</color>
+    <color name="title_blue">#35b1c4</color>
+    <color name="dark_gray_font">#868484</color>
+    <color name="reports_blue_title">#173084</color>
+    <color name="forums_card_gray">#4b4b4b</color>
+    <color name="bg_blue">#34c2ce</color>
+    <color name="comments_gray_bg">#f8f8f8</color>
+    <color name="font_gray">#8E8E8E</color>
+
+    <color name="participantBackground">#66000000</color>
+    <color name="participantSelectedBackground">#cc000000</color>
+    <color name="participantTrackSwitchOff">#80000000</color>
+
+    <!-- bottom bar colors -->
+    <color name="bottom_header">#FAFAFA</color>
+    <color name="medium_gray">#b7b8b9</color>
+    <color name="comment_bg">#9B71B5</color>
+    <color name="delete_red_font">#99d32a4a</color>
+    <color name="answers_yellow_bg">#eaaf56</color>
+    <color name="dark_pink_bg">#76518d</color>
+    <color name="doctor_profile_badge">#037586</color>
+
+    <!--Nov designs-->
+    <color name="splash_title_color">#cc162758</color>
+    <color name="font_light_blue">#cc162758</color>
+    <color name="font_light_gray">#cc2e2e2e</color>
+    <color name="tag_gray_bg">#e2e2e2</color>
+    <color name="font_light_black">#414141</color>
+    <color name="nov_line_gray">#636363</color>
+    <color name="nov_font_light_gray">#656565</color>
+    <color name="nov_search_bg">#DBDBDB</color>
+    <color name="nov_title_font_gray">#cc575757</color>
+    <color name="font_gray_dark">#474747</color>
+    <color name="font_light_white">#ccffffff</color>
+    <color name="light_blue">#1d7acc</color>
+    <color name="skip_for_now">#99162758</color>
+    <color name="noti_black_font">#3a3a3a</color>
+    <color name="rounded_bg_grey">#33848484</color>
+    <color name="hald_transparent">#99000000</color>
+    <color name="transaction_font_blue">#e6162758</color>
+    <color name="transaction_font_green">#148514</color>
+    <color name="red">#851414</color>
+    <color name="tag_bg_blue">#d4daec</color>
+    <color name="light_black_2">#cc202020</color>
+    <color name="chat_left_bg">#eaecf2</color>
+    <color name="chat_left_font">#63697b</color>
+    <color name="chat_right_bg">#666a89df</color>
+    <color name="chat_right_font">#63697b</color>
+    <color name="green">#5bda63</color>
+    <color name="yellow">#dad25b</color>
+    <color name="blue">#6acbc8</color>
+    <color name="light_red">#ff6060</color>
+    <color name="march_splash_bg">#1B3FA5</color>
+    <color name="version_name_font_gray">#ebebeb</color>
+
+</resources>

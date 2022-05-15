@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/custom_toast_layout"
+    android:background="@drawable/badge_background_primary_blue"
+    android:padding="@dimen/_12sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMessage"
+        android:text="Message"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
+</layout>

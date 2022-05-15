@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+            <include layout="@layout/layout_doctor_ac_setup_header" android:id="@+id/layoutAcSetup"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightest_bg"
+                android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_36sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="Add Practice Information"
+                        android:textColor="@color/font_light_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/nov_common_input_box">
+
+                        <Spinner
+                            android:id="@+id/spEstablishmentType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:layout_toStartOf="@+id/ivDropDownEstablishment"
+                            android:background="@null"
+                            android:entries="@array/practice_type"
+                            android:paddingStart="@dimen/_6sdp" />
+
+                        <ImageView
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:id="@+id/ivDropDownEstablishment"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_dropdown_full"
+                            app:tint="@color/font_light_blue" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="Establishment Name"
+                        android:textColor="@color/font_light_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/nov_common_input_box">
+
+                        <EditText
+                            android:id="@+id/etEstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_medium"
+                            android:hint="Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textMultiLine"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:textColor="@color/font_light_blue" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="Organisation Address"
+                        android:textColor="@color/font_light_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/nov_common_input_box">
+
+                        <EditText
+                            android:id="@+id/etDoorNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_medium"
+                            android:hint="Door No "
+                            android:imeOptions="actionNext"
+                            android:inputType="textMultiLine"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:textColor="@color/font_light_blue" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/nov_common_input_box">
+
+                        <EditText
+                            android:id="@+id/etStreetName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_medium"
+                            android:hint="Street name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textMultiLine"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:textColor="@color/font_light_blue" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/nov_common_input_box">
+                        <EditText
+                            android:id="@+id/etCity"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/font_light_blue"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:maxLines="1"
+                            android:inputType="textMultiLine"
+                            android:imeOptions="actionNext"
+                            android:hint="City"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/nov_common_input_box">
+                            <EditText
+                                android:id="@+id/etState"
+                                android:background="@null"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:maxLines="1"
+                                android:inputType="textMultiLine"
+                                android:imeOptions="actionNext"
+                                android:fontFamily="@font/nunito_medium"
+                                android:textColor="@color/font_light_blue"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:hint="State"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/etPincode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="Pincode"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/font_light_blue" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relContinue"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/button_background">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/nunito_bold"
+                        android:layout_centerHorizontal="true"
+                        android:text="Save Clinic"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"/>
+
+            </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        <include
+            android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar" />
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+
+</layout>

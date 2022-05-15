@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relRoot"
+        android:background="@color/lightest_bg">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nestedScrollView"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+            <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/header_bg"
+                    android:id="@+id/linUpperContainner"
+                    android:padding="@dimen/_15sdp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+                        <ImageView
+                            android:id="@+id/ivProfile"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_user_image_blue"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentEnd="true">
+                            <ImageView
+                                android:id="@+id/ivSupport"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/ic_support_new" />
+                            <ImageView
+                                android:id="@+id/ivChat"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:src="@drawable/ic_chat_white" />
+
+                            <ImageView
+                                android:id="@+id/ivNotification"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/ic_notification_white" />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:id="@+id/tvWelcome"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Good morning, Varun"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"/>
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/ShortsCommonCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_minus50sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_12sdp">
+
+                        <ImageView
+                            android:id="@+id/ivWallet"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/ic_wallet" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_toStartOf="@+id/tvWithDraw"
+                            android:layout_toEndOf="@+id/ivWallet"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="My Wallet"
+                                android:textColor="@color/light_black_2"
+                                android:textSize="@dimen/_16sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvWalletBalance"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/nunito_semi_bold"
+                                android:text="\u20B9 0.0"
+                                android:textColor="@color/splash_title_color"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvTransactionHistory"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="@string/transaction_history_u"
+                                android:textColor="@color/font_light_blue"
+                                android:textSize="@dimen/_10sdp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvWithDraw"
+                            style="@style/NovAppCommonButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:minWidth="@dimen/_70sdp"
+                            android:text="@string/withdraw" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightest_bg"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_gravity="end"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:id="@+id/relAppointments"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_90sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:background="@drawable/dr_total_appts_bg"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/_12sdp">
+
+                                    <TextView
+                                        android:id="@+id/tvTotalAppointments"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/today_s_n_appointments"
+                                        android:textColor="@color/white" />
+
+                                    <TextView
+                                        android:id="@+id/tvTodayApptCount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:fontFamily="@font/nunito_medium"
+                                        android:text="00"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp" />
+
+
+                                </LinearLayout>
+
+                        </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:id="@+id/relPatients"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_90sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:background="@drawable/dr_total_patients_bg"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/_12sdp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/total_no_of_npatients"
+                                        android:textColor="@color/white" />
+
+                                    <TextView
+                                        android:id="@+id/tvNoOfPatients"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:fontFamily="@font/nunito_medium"
+                                        android:text="00"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp" />
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.core.widget.NestedScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/_12sdp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/linProfileStatus"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            style="@style/CommonHomeScreenTitle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/profile_completion" />
+
+                                        <androidx.cardview.widget.CardView
+                                            style="@style/ShortsCommonCardView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:padding="@dimen/_10sdp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical"
+                                                android:padding="@dimen/_12sdp">
+
+                                                <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:id="@+id/ivProfilePic"
+                                                        android:layout_width="@dimen/_35sdp"
+                                                        android:layout_height="@dimen/_35sdp"
+                                                        android:src="@drawable/ic_user_image" />
+
+                                                    <TextView
+                                                        android:id="@+id/tvCOmpleteProfile"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="@dimen/_12sdp"
+                                                        android:layout_marginEnd="@dimen/_12sdp"
+                                                        android:layout_toStartOf="@+id/tvCOmplete"
+                                                        android:layout_toEndOf="@+id/ivProfilePic"
+                                                        android:fontFamily="@font/nunito_bold"
+                                                        android:text="@string/complete_your_profile"
+                                                        android:textColor="@color/font_light_blue"
+                                                        android:textSize="@dimen/_12sdp" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_below="@+id/tvCOmpleteProfile"
+                                                        android:layout_marginStart="@dimen/_12sdp"
+                                                        android:layout_marginEnd="@dimen/_12sdp"
+                                                        android:layout_toEndOf="@+id/ivProfilePic"
+                                                        android:fontFamily="@font/nunito_medium"
+                                                        android:text="@string/to_access_all_features"
+                                                        android:textColor="@color/light_black"
+                                                        android:textSize="@dimen/_10sdp" />
+
+                                                    <TextView
+                                                        android:id="@+id/tvCOmplete"
+                                                        style="@style/NovAppCommonButton"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentTop="true"
+                                                        android:layout_alignParentEnd="true"
+                                                        android:layout_marginTop="@dimen/_minus1sdp"
+                                                        android:minWidth="@dimen/_70sdp"
+                                                        android:text="Complete" />
+
+
+                                                </RelativeLayout>
+
+
+                                                <androidx.recyclerview.widget.RecyclerView
+                                                    android:id="@+id/rvProfileStatus"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="@dimen/_30sdp"
+                                                    android:layout_marginStart="@dimen/_10sdp"
+                                                    android:layout_marginTop="@dimen/_30sdp" />
+
+                                            </LinearLayout>
+
+
+                                        </androidx.cardview.widget.CardView>
+                                    </LinearLayout>
+
+
+
+
+
+
+
+                                    <LinearLayout
+                                        android:id="@+id/linQuestionsTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_12sdp"
+                                        android:layout_marginBottom="@dimen/_12sdp"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_16sdp"
+                                            android:layout_height="@dimen/_16sdp"
+                                            android:src="@drawable/ic_questions" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginStart="@dimen/_4sdp"
+                                            android:fontFamily="@font/nunito_bold"
+                                            android:text="Buddy Talks"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/_10sdp" />
+
+
+                                        <TextView
+                                            android:id="@+id/tvQuestionsCOunt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginStart="@dimen/_4sdp"
+                                            android:background="@drawable/badge_background_primary_blue"
+                                            android:fontFamily="@font/nunito_regular"
+                                            android:gravity="center"
+                                            android:paddingStart="@dimen/_6sdp"
+                                            android:paddingTop="@dimen/_2sdp"
+                                            android:paddingEnd="@dimen/_6sdp"
+                                            android:paddingBottom="@dimen/_2sdp"
+                                            android:text="00"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_8sdp" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical">
+
+                                            <TextView
+                                                android:id="@+id/tvViewAllQuestions"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentEnd="true"
+                                                android:fontFamily="@font/nunito_medium"
+                                                android:text="@string/view_all"
+                                                android:textColor="@color/skip_to_login_red"
+                                                android:textSize="@dimen/_10sdp" />
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/linQueriesContainer"
+                                        android:orientation="vertical">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:layout_marginTop="@dimen/_10sdp">
+
+                                            <TextView
+                                                style="@style/CommonHomeScreenTitle"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:text="Patient Queries" />
+
+                                            <TextView
+                                                android:id="@+id/tvAllPatientQUeries"
+                                                style="@style/CommonHomeScreenTitle"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:fontFamily="@font/nunito_medium"
+                                                android:text="@string/view_all" />
+
+                                        </RelativeLayout>
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rvPatientQueries"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_12sdp"
+                                        android:id="@+id/linDiscussionsContainer"
+                                        android:orientation="vertical">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            >
+
+                                            <TextView
+                                                style="@style/CommonHomeScreenTitle"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:text="Onco Club" />
+
+                                            <TextView
+                                                android:id="@+id/tvAllDiscussions"
+                                                style="@style/CommonHomeScreenTitle"
+                                                android:fontFamily="@font/nunito_medium"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:text="@string/view_all" />
+
+                                        </RelativeLayout>
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/rvOncoDiscussions"
+                                            android:layout_marginTop="@dimen/_1sdp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+                            </androidx.core.widget.NestedScrollView>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/ic_float_add"
+            android:elevation="@dimen/_30sdp"
+            android:visibility="gone"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:clickable="true"
+            android:id="@+id/frFloating"
+            android:background="@color/hald_transparent"
+            />
+
+
+
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

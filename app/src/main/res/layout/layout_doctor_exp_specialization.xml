@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightest_bg"
+        android:orientation="vertical">
+        <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+        <include layout="@layout/layout_doctor_ac_setup_header" android:id="@+id/layoutAcSetup"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_36sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llSpl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="Select Specialization"
+                    android:textColor="@color/font_light_black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/nov_common_input_box">
+
+                    <Spinner
+                        android:id="@+id/spSpecialization"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_6sdp"
+                        android:layout_toStartOf="@+id/ivDropDownSP"
+                        android:background="@null"
+                        android:entries="@array/specialization"
+                        android:paddingStart="@dimen/_10sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivDropDownSP"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_dropdown_full"
+                        app:tint="@color/font_light_blue" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llSpl"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="Years of Experience"
+                    android:textColor="@color/font_light_black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/nov_common_input_box">
+
+                    <EditText
+                        android:id="@+id/edYearsOfExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0123456789"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_6sdp"
+                        android:layout_toStartOf="@+id/linCOunter"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito_medium"
+                        android:hint="Years Of Experience"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:maxLength="2" />
+
+                    <LinearLayout
+                        android:id="@+id/linCOunter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivArrowUp"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:src="@drawable/ic_arrow_drop_up"
+                            app:tint="@color/font_light_blue" />
+
+                        <ImageView
+                            android:id="@+id/ivArrowDown"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginTop="-15dp"
+                            android:layout_marginEnd="0dp"
+                            android:src="@drawable/ic_arrow_drop_down"
+                            app:tint="@color/font_light_blue" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSave"
+                style="@style/NovAppCommonButton"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:background="@drawable/button_background"
+                android:visibility="gone"
+                android:text="@string/save" />
+
+            <RelativeLayout
+                android:id="@+id/relContinue"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:background="@drawable/button_background"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvContinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/continue_1"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/ivContinue"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_3sdp"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back_blue"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+        <include
+            android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar" />
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

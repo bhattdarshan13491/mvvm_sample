@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        style="@style/RootBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:padding="@dimen/root_padding">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:visibility="gone"
+                    style="@style/TitleBackButton" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:src="@drawable/nov_logo_onco_buddy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/nunito_semi_bold"
+                        android:text="@string/reset_pwd"
+                        android:textColor="@color/font_light_black"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/relNumber"
+                        style="@style/NovCommonEditTextBoxContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp">
+
+                        <ImageView
+                            android:id="@+id/ivCall"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/call_icon" />
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            style="@style/NovCommonEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_toStartOf="@+id/tvSendOtp"
+                            android:layout_toEndOf="@+id/ivCall"
+                            android:digits="0123456789"
+                            android:hint="Registered Mobile No"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="10" />
+
+                        <TextView
+                            android:id="@+id/tvSendOtp"
+                            style="@style/NovCommonTextViewButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/send_otp"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/NovCommonEditTextBoxContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <EditText
+                            android:id="@+id/etOTP"
+                            style="@style/NovCommonEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789"
+                            android:hint="@string/enter_otp"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="4" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:id="@+id/linPassword">
+                        <RelativeLayout
+                            style="@style/NovCommonEditTextBoxContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <EditText
+                                android:id="@+id/etNewPassword"
+                                style="@style/NovCommonEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toStartOf="@+id/ivShowHidePwd"
+                                android:hint="@string/enter_new_password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword" />
+
+                            <ImageView
+                                android:id="@+id/ivShowHidePwd"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_hide_pwd" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            style="@style/NovCommonEditTextBoxContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <EditText
+                                android:id="@+id/etRPassword"
+                                style="@style/NovCommonEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:hint="@string/confirm_password"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvCOnfirmOtp"
+                        style="@style/NovAppCommonButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivLogo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/confirm_otp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar" />
+
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightest_bg"
+        tools:context=".views.activities.NovDoctorDetailsActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/rlDocActBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:background="@drawable/blue_bg_one_side_rounded">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_6sdp">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/ivBack"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/care_companion"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDoctorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:background="@drawable/rounded_white">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_60sdp">
+
+                <TextView
+                    android:id="@+id/tvDoctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:fontFamily="@font/nunito_bold"
+                    tools:text="Dr Varun Krishnan"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvQualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@+id/tvDoctorName"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="MBBS, MDS" />
+
+                <TextView
+                    android:id="@+id/tvSpeciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@+id/tvQualification"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="Medical Oncologist" />
+
+                <TextView
+                    android:id="@+id/tvExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@+id/tvSpeciality"
+                    android:fontFamily="@font/nunito_medium"
+                    tools:text="5 Years of Experience"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/linActions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivMessage"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:src="@drawable/ic_call_gray_bg" />
+
+                    <ImageView
+                        android:id="@+id/ivCall"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_toStartOf="@+id/ivMessage"
+                        android:src="@drawable/ic_msg_gray_bg"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTotalPatientsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linActions"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:gravity="center"
+                    android:text="@string/total_patients_supported"
+                    android:textColor="@color/font_light_blue" />
+
+                <TextView
+                    android:id="@+id/tvTotalPatientsTitleVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTotalPatientsTitle"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:textColor="@color/font_light_blue"
+                    tools:text="01"
+
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:src="@drawable/ic_user_image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlDoctorDetails"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:background="@drawable/rounded_white"
+            android:padding="@dimen/_16sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Languages known :"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvLanguages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    tools:text="Hindi, Gujarati, English "
+                    android:textColor="@color/font_light_blue"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvAbout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="About :"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvAboutVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAbout"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+                    android:textColor="@color/font_light_blue"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

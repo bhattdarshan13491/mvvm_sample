@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightest_bg"
+        android:orientation="vertical">
+        <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+        <include layout="@layout/layout_doctor_ac_setup_header" android:id="@+id/layoutAcSetup"/>
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/llTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/linTimeSlot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvUpcomingAppointments"
+                    style="@style/NovAppointmentsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Slot Setup" />
+
+                <ImageView
+                    android:id="@+id/ivUpcomingLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/purple_700" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linFeeBankDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvPastAppointments"
+                    style="@style/NovAppointmentsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fee And Bank Details"
+                    android:textColor="@color/gray_font" />
+
+                <ImageView
+                    android:id="@+id/ivPastLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/nov_line_gray" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <include
+                android:id="@+id/layoutTimeSLot"
+                layout="@layout/item_time_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llTab"
+                android:visibility="visible" />
+
+        <include
+            android:layout_below="@+id/llTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutBankDetails"
+            android:visibility="gone"
+            layout="@layout/layout_doctor_fee_bank_details"/>
+
+
+            <include android:id="@+id/layoutProgress"
+                layout="@layout/progress_bar"/>
+
+
+    </RelativeLayout>
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+</layout>

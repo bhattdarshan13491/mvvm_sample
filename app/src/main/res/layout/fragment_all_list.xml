@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:background="@drawable/bottom_shadow"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linTitleContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        style="@style/TitleBackButton" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oncohub" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linTitleActions"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:id="@+id/ivTitleSearch"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:src="@drawable/ic_search_black"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relSearchContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivSearch"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_search_black" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edSearchH"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_toStartOf="@+id/ivClose"
+                        android:layout_toEndOf="@+id/ivSearch"
+                        android:background="@null"
+                        android:hint="Search your content"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textColor="@color/title_text_color"
+                        android:textColorHint="@color/gray_font"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivClose"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_close"
+                        app:tint="@color/title_text_color" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/edSearch"
+                android:layout_margin="@dimen/root_padding"
+                android:drawableStart="@drawable/ic_search_black"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/gray_border_white_bg"
+                android:hint="Search your content"
+                android:drawablePadding="@dimen/_10sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/record_type_capsule"
+                android:padding="2dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvFirstTab"
+                    style="@style/AddMedicalRecordTabs"
+                    android:text="@string/videos"
+                    android:background="@color/bg_blue"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvSecondTab"
+                    style="@style/AddMedicalRecordTabs"
+                    android:background="@color/white"
+                    android:text="Blogs"
+                    android:textColor="@color/text_dark_gray" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/tvThirdTab"
+                    style="@style/AddMedicalRecordTabs"
+                    android:background="@color/white"
+                    android:text="BuddyTalks"
+                    android:textColor="@color/text_dark_gray" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_border" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linMyQuestion"
+                android:gravity="center_vertical|end"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_questions"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switchMyQuestion"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5sdp">
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:overScrollMode="never" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvNoData"
+                    android:text="@string/no_records_found"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textColor="@color/gray_font"
+                    android:visibility="gone"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_below="@+id/recyclerView" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/ivAddQuestion"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:src="@drawable/ic_float_add_question"/>
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

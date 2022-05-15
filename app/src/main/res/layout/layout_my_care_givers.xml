@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightest_bg"
+        android:id="@+id/linMyCGCOntainer">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightest_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="@string/my_caregivers"
+                    android:textColor="@color/light_black"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/linAddCareGiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/rounded_blue_border"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_120sdp"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_6sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:src="@drawable/ic_add_circular_blue"
+                        app:tint="@color/font_light_blue" />
+
+                    <TextView
+                        android:id="@+id/tvHeadLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="Add Caregiver"
+                        android:textColor="@color/font_light_blue"
+                        android:textSize="@dimen/_12sdp"
+
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:overScrollMode="never" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvNoData"
+                    android:text="No care givers found!"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textColor="@color/gray_font"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:id="@+id/linCGDetails">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invite and connect with your care giver on oncobuddy and let them be a part of your journey."
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    />
+
+                <include layout="@layout/card_care_giver"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/layoutcardCareGIver"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linCGOne"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        style="@style/NovCommonEditTextBoxContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/ivUserCGOne"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_person" />
+
+                        <EditText
+                            android:id="@+id/etCGOneName"
+                            style="@style/NovCommonEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_toEndOf="@+id/ivUserCGOne"
+                            android:hint="@string/please_enter_name"
+                            android:inputType="textCapWords"
+                            android:maxLines="1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/NovCommonEditTextBoxContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/ivmobileNoCG1"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_mobile_no" />
+
+                        <EditText
+                            android:id="@+id/etMobileNumberCG1"
+                            style="@style/NovCommonEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_toEndOf="@+id/ivmobileNoCG1"
+                            android:hint="@string/please_enter_mobile_no"
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:maxLines="1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/NovCommonEditTextBoxContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <Spinner
+                            android:id="@+id/spCGOneRelationShip"
+                            style="@style/NovCommonEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/ivDropDownCGOne"
+                            android:entries="@array/relationship_type" />
+
+                        <ImageView
+                            android:id="@+id/ivDropDownCGOne"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/ic_dropdown_full" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvAddCareGiver"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivLogo"
+                        style="@style/NovAppCommonButton"
+                        android:text="@string/add_care_giver"
+                        android:visibility="gone"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relAddMore"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_add_box_blue"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_add_box_blue"
+                        android:drawablePadding="@dimen/_6sdp"
+                        android:fontFamily="@font/nunito_medium"
+                        android:gravity="center"
+                        android:text="@string/add_more"
+                        android:textColor="@color/font_light_black"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

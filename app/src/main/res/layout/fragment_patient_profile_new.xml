@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/relMainBg"
+                    android:layout_height="@dimen/_310sdp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_270sdp"
+                        android:id="@+id/relHeaderBg"
+                        android:background="@drawable/ic_patient_profile_header_bg"
+                        >
+
+
+                        <LinearLayout
+                            android:id="@+id/linTitleContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/ivBack"
+                                android:src="@drawable/ic_back_new"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:visibility="gone"
+                                style="@style/TitleBackButtonNew" />
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                style="@style/TitleTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:visibility="gone"
+                                android:text="Back" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:padding="@dimen/_2sdp"
+                                    android:id="@+id/ivEdit"
+                                    android:src="@drawable/ic_profile_edit"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:id="@+id/ivProfileImage"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_profile_circular_white_bg"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/ivProfileImage"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvName"
+                                android:text="Akshay K"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:fontFamily="@font/nunito_bold"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:background="@drawable/badge_dark_pink_bg"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvHeadLine"
+                                    tools:text="Second stage cancer"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:ellipsize="end"
+
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_18sdp"
+                                    android:layout_height="@dimen/_18sdp"
+                                    android:src="@drawable/ic_circular_star"
+                                    android:layout_marginStart="@dimen/_10sdp"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvCancerTypeVal"
+                                    android:text="Lungs"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:ellipsize="end"
+                                    android:background="@drawable/badge_dark_pink_bg"
+                                    android:padding="@dimen/_10sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:minWidth="@dimen/_70sdp"
+                                    android:gravity="center"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvSubCancerTypeVal"
+                                    android:text="Lungs"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:ellipsize="end"
+                                    android:background="@drawable/badge_dark_pink_bg"
+                                    android:padding="@dimen/_10sdp"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:minWidth="@dimen/_80sdp"
+                                    android:gravity="center"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp">
+                                    <ImageView
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:src="@drawable/ic_profile_call"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:id="@+id/tvPhoneNumber"
+                                        android:text="8333822828"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:fontFamily="@font/nunito_regular" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+
+                                    >
+                                    <ImageView
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:src="@drawable/ic_profile_mail"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:id="@+id/tvEmailVal"
+                                        android:text="a@b.com"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:fontFamily="@font/nunito_regular"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        />
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="@dimen/_180sdp"
+                        android:id="@+id/cardPatientCOntactsCOntainer"
+                        style="@style/CommonCardView"
+                        android:padding="@dimen/root_padding"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:id="@+id/linMyDoctors"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_12sdp">
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/stethoscope"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/my_doctors"
+                                    android:textColor="@color/quoted_text_blue"/>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:src="@color/gray_border"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/linMyCareGiver"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_12sdp">
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/my__care_giver"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/my_caregiver"
+                                    android:textColor="@color/quoted_text_blue"/>
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardContacts"
+                            style="@style/CommonProfileCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvEmergencyContacts"
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/emergency_contacts" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewEvents"
+                            style="@style/CommonProfileCardView"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvGetEvents"
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/view_ecrf_events" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/CommonProfileCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:id="@+id/cardViewDocument"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvEcrfPdf"
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="View summary report" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardABout"
+                            style="@style/CommonProfileCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvAbout"
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/about_4basecare" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardContactUS"
+                            style="@style/CommonProfileCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/contact_us" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardAppHelp"
+                            style="@style/CommonProfileCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <TextView
+                                    android:id="@+id/tvAppHelp"
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/app_help" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardChangePassword"
+                            style="@style/CommonProfileCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <TextView
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/change_password" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardLogout"
+                            style="@style/CommonProfileCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvLogout"
+                                    style="@style/ProfileOptionTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/logout" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_2sdp"
+                                    android:src="@drawable/ic_logout" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

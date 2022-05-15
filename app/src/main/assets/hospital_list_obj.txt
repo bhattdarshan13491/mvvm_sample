@@ -1,0 +1,562 @@
+{
+  "success": true,
+  "message": "Hospital list retrieved successfully.",
+  "payLoad": [
+    {
+      "id": 0,
+      "name": "Yashoda Hospital Malakpet"
+    },
+    {
+      "id": 1,
+      "name": "Yashoda Hospital Secunderabad"
+    },
+    {
+      "id": 2,
+      "name": "Hyderabad Multispeciality Hospital"
+    },
+    {
+      "id": 3,
+      "name": "Yashoda Hospital Somajiguda"
+    },
+    {
+      "id": 4,
+      "name": "Sowmya Hospital"
+    },
+    {
+      "id": 5,
+      "name": "MNJ Cancer Hospital"
+    },
+    {
+      "id": 6,
+      "name": "Care Hospital"
+    },
+    {
+      "id": 7,
+      "name": "SVIMS"
+    },
+    {
+      "id": 8,
+      "name": "Malla Reddy Hospital"
+    },
+    {
+      "id": 9,
+      "name": "NIMS Hospital,Punjagutta"
+    },
+    {
+      "id": 10,
+      "name": "Subha cancer Clinic,Barkatpur"
+    },
+    {
+      "id": 11,
+      "name": "Continental hosp."
+    },
+    {
+      "id": 12,
+      "name": "Indo American Hospital"
+    },
+    {
+      "id": 13,
+      "name": "AOI,Nallagandla,Lingampally"
+    },
+    {
+      "id": 14,
+      "name": "Care Hospitals,Gachibowli"
+    },
+    {
+      "id": 15,
+      "name": "AIG Hospital,Gachibowli"
+    },
+    {
+      "id": 16,
+      "name": "Omega hospital,Jubilee hills"
+    },
+    {
+      "id": 17,
+      "name": "Cipher cancer clinics,above bentley showroom,jubilee hills"
+    },
+    {
+      "id": 18,
+      "name": "Raksha cancer center"
+    },
+    {
+      "id": 19,
+      "name": "ESI Hospital,Erragada"
+    },
+    {
+      "id": 20,
+      "name": "Vivekananda Hospital,Near CM Camp office,Begumpet"
+    },
+    {
+      "id": 21,
+      "name": "Mahatma gandhi cancer center,MVP Colony,visakhapatnam"
+    },
+    {
+      "id": 22,
+      "name": "KGH Hospital,visakhapatnam"
+    },
+    {
+      "id": 23,
+      "name": "HCG Pinnacle Hospital,Arilova,visakhapatnam"
+    },
+    {
+      "id": 24,
+      "name": "MANIPAL HOSPITAL"
+    },
+    {
+      "id": 25,
+      "name": "Omega hospital,Guntur"
+    },
+    {
+      "id": 26,
+      "name": "Indiana Hopsital Mangalore"
+    },
+    {
+      "id": 27,
+      "name": "Kasturba Hospital Manipal"
+    },
+    {
+      "id": 28,
+      "name": "Yenepoya Hopsital"
+    },
+    {
+      "id": 29,
+      "name": "Fr. Mullers  Hopsital"
+    },
+    {
+      "id": 30,
+      "name": "K S hegde  Hopsital"
+    },
+    {
+      "id": 31,
+      "name": "AJ Hospital  Mangalore"
+    },
+    {
+      "id": 32,
+      "name": "MIO mangalore"
+    },
+    {
+      "id": 33,
+      "name": "Kasturba Hospital Manipal"
+    },
+    {
+      "id": 34,
+      "name": "Unity  Hopsital"
+    },
+    {
+      "id": 35,
+      "name": "Yenepoya Hopsital"
+    },
+    {
+      "id": 36,
+      "name": "KMC Mangalore"
+    },
+    {
+      "id": 37,
+      "name": "Dr TMA Pai Udupi"
+    },
+    {
+      "id": 38,
+      "name": "ASTER CMI HOSPITAL"
+    },
+    {
+      "id": 39,
+      "name": "SRI SHANKARA HOSPITAL"
+    },
+    {
+      "id": 40,
+      "name": "SAHYADRI NARAYANA HOSPITAL"
+    },
+    {
+      "id": 41,
+      "name": "M S Ramaiah Hospital"
+    },
+    {
+      "id": 42,
+      "name": "Kidwai Memorial Inst of Oncology"
+    },
+    {
+      "id": 43,
+      "name": "Apollo Hospital"
+    },
+    {
+      "id": 44,
+      "name": "M S Ramaiah Hospital"
+    },
+    {
+      "id": 45,
+      "name": "ASTER CMI HOSPITAL"
+    },
+    {
+      "id": 46,
+      "name": "NARAYANA HRUDAYALAYA"
+    },
+    {
+      "id": 47,
+      "name": "BGS Global Hospital"
+    },
+    {
+      "id": 48,
+      "name": "Sakra Hospital"
+    },
+    {
+      "id": 49,
+      "name": "FORTIS HOSPITAL"
+    },
+    {
+      "id": 50,
+      "name": "Vydehi Hospital"
+    },
+    {
+      "id": 51,
+      "name": "Cytecare Cancer Hospital"
+    },
+    {
+      "id": 52,
+      "name": "Prakriya Hospital"
+    },
+    {
+      "id": 53,
+      "name": "Columbia Asia, Whitefield"
+    },
+    {
+      "id": 54,
+      "name": "Columbia Asia, Hebbal"
+    },
+    {
+      "id": 55,
+      "name": "Columbia Asia, Bellandur"
+    },
+    {
+      "id": 56,
+      "name": "Mallige Hospital."
+    },
+    {
+      "id": 57,
+      "name": "Trimacs clinic. Bangalore"
+    },
+    {
+      "id": 58,
+      "name": "HCG hospital"
+    },
+    {
+      "id": 59,
+      "name": "St Johns Hospital"
+    },
+    {
+      "id": 60,
+      "name": "Command hosp"
+    },
+    {
+      "id": 61,
+      "name": "KLES Hospital"
+    },
+    {
+      "id": 62,
+      "name": "GOVERNMENT HOSPITAL"
+    },
+    {
+      "id": 63,
+      "name": "GKNM HOSPITAL"
+    },
+    {
+      "id": 64,
+      "name": "KMCH HOSPITAL"
+    },
+    {
+      "id": 65,
+      "name": "RAMAKRISHNA HOSPITAL"
+    },
+    {
+      "id": 66,
+      "name": "ASIRVADHAM HOSPITAL"
+    },
+    {
+      "id": 67,
+      "name": "APOLLO HOSPITAL"
+    },
+    {
+      "id": 68,
+      "name": "PSG HOSPITAL"
+    },
+    {
+      "id": 69,
+      "name": "KAUVERY HOSPITAL"
+    },
+    {
+      "id": 70,
+      "name": "ROYAL CARE HOSPITAL"
+    },
+    {
+      "id": 71,
+      "name": "GKNM HOSPITAL"
+    },
+    {
+      "id": 72,
+      "name": "Vadamalaiyan Hospital"
+    },
+    {
+      "id": 73,
+      "name": "MEENAKSHI MISSION HOSPITAL"
+    },
+    {
+      "id": 74,
+      "name": "Jipmer"
+    },
+    {
+      "id": 75,
+      "name": "General Hospital"
+    },
+    {
+      "id": 76,
+      "name": "Madras Medical Mission"
+    },
+    {
+      "id": 77,
+      "name": "Royapettah GH"
+    },
+    {
+      "id": 78,
+      "name": "Rela institute"
+    },
+    {
+      "id": 79,
+      "name": "Roy memorial Hospital"
+    },
+    {
+      "id": 80,
+      "name": "SRMC"
+    },
+    {
+      "id": 81,
+      "name": "Adyar cancer Institute"
+    },
+    {
+      "id": 82,
+      "name": "Apollo Hospital"
+    },
+    {
+      "id": 83,
+      "name": "Global Hospital"
+    },
+    {
+      "id": 84,
+      "name": "Adyar cancer Institute"
+    },
+    {
+      "id": 85,
+      "name": "CMC"
+    },
+    {
+      "id": 86,
+      "name": "Kaveri Hospital"
+    },
+    {
+      "id": 87,
+      "name": "Stanely"
+    },
+    {
+      "id": 88,
+      "name": "Mehta Hospital"
+    },
+    {
+      "id": 89,
+      "name": "Kumaran Hospital"
+    },
+    {
+      "id": 90,
+      "name": "Kamakshi Hospital"
+    },
+    {
+      "id": 91,
+      "name": "MIOT"
+    },
+    {
+      "id": 92,
+      "name": "VS Hospital"
+    },
+    {
+      "id": 93,
+      "name": "SIMS"
+    },
+    {
+      "id": 94,
+      "name": "Apollo Proton Cancer Centre"
+    },
+    {
+      "id": 95,
+      "name": "Avadi Cancer Clinic"
+    },
+    {
+      "id": 96,
+      "name": "WELCARE HOSPITAL"
+    },
+    {
+      "id": 97,
+      "name": "AMALA INTITUTE OF MEDICAL SCIENCES-TRICHUR,KERALA"
+    },
+    {
+      "id": 98,
+      "name": "LAKESHORE HOSPITAL"
+    },
+    {
+      "id": 99,
+      "name": "AMRITA INSTITUTE OF MEDICAL SCIENCES,COCHIN"
+    },
+    {
+      "id": 100,
+      "name": "SUNRISE HOSPITAL,COCHIN"
+    },
+    {
+      "id": 101,
+      "name": "JUBILEE MISSION HOSPITAL,TRICHUR"
+    },
+    {
+      "id": 102,
+      "name": "COCHIN CANCER RESEARCH CENTRE,COCHIN"
+    },
+    {
+      "id": 103,
+      "name": "MOULANA HOSPITAL,PERINTHALMANNA"
+    },
+    {
+      "id": 104,
+      "name": "RAJAGIRI HOSPITAL,COCHIN"
+    },
+    {
+      "id": 105,
+      "name": "PUSHPAGIRI MCH"
+    },
+    {
+      "id": 106,
+      "name": "REGIONAL CANCER CENTRE"
+    },
+    {
+      "id": 107,
+      "name": "MCH TRIVANDRUM"
+    },
+    {
+      "id": 108,
+      "name": "CARITHAS HOSPITAL"
+    },
+    {
+      "id": 109,
+      "name": "LORDS HOSPITAL"
+    },
+    {
+      "id": 110,
+      "name": "KIMS,TRIVANDRUM"
+    },
+    {
+      "id": 111,
+      "name": "MCH KOTTAYAM"
+    },
+    {
+      "id": 112,
+      "name": "MVR CENTRE"
+    },
+    {
+      "id": 113,
+      "name": "Baby Memorial Hospital"
+    },
+    {
+      "id": 114,
+      "name": "BMH"
+    },
+    {
+      "id": 115,
+      "name": "Malabar Cancer Centre"
+    },
+    {
+      "id": 116,
+      "name": "Oncquest Laboratories Ltd"
+    },
+    {
+      "id": 117,
+      "name": "Lal Path Labs"
+    },
+    {
+      "id": 118,
+      "name": "Core Diagnostics"
+    },
+    {
+      "id": 119,
+      "name": "Metropolis Labs"
+    },
+    {
+      "id": 120,
+      "name": "SRL"
+    },
+    {
+      "id": 121,
+      "name": "Suburban Diagnostics"
+    },
+    {
+      "id": 122,
+      "name": "Lilac Insights"
+    },
+    {
+      "id": 123,
+      "name": "Vimta Diagnostics"
+    },
+    {
+      "id": 124,
+      "name": "Neuberg Diagnostics"
+    },
+    {
+      "id": 125,
+      "name": "Medgenome"
+    },
+    {
+      "id": 126,
+      "name": "Strand Life Sciences"
+    },
+    {
+      "id": 127,
+      "name": "Suraksha Diagnostics"
+    },
+    {
+      "id": 128,
+      "name": "Thyrocare"
+    },
+    {
+      "id": 129,
+      "name": "Pathkind Labs"
+    },
+    {
+      "id": 130,
+      "name": "Sterling Diagnostics"
+    },
+    {
+      "id": 131,
+      "name": "SN Gene"
+    },
+    {
+      "id": 132,
+      "name": "Apollo Diagnostics"
+    },
+    {
+      "id": 133,
+      "name": "Unipath"
+    },
+    {
+      "id": 134,
+      "name": "I genetics"
+    },
+    {
+      "id": 135,
+      "name": "Foundation Medicine"
+    },
+    {
+      "id": 136,
+      "name": "Map My Genome"
+    },
+    {
+      "id": 137,
+      "name": "Rivarra Laboratories"
+    },
+    {
+      "id": 138,
+      "name": "Onco Stem Diagnostics"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightest_bg"
+        android:orientation="vertical"
+        android:id="@+id/linDoctorDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/layout_nov_header" android:id="@+id/layoutHeader"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="@string/connect_with_your_doctor_on_oncobuddy_by_entering_doctor_code_or_search_using_mobile_number"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    />
+
+                <RelativeLayout
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        style="@style/NovCommonEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ivQRCode"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:hint="Doctor Code"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:id="@+id/ivQRCode"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_qr_code" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="13">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hr_blue_line"
+                        android:layout_weight="6"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:fontFamily="@font/nunito_medium"
+                        android:textColor="@color/splash_title_color"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Or" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hr_blue_line"
+                        android:layout_weight="6"
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search using mobile no"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    />
+
+                <RelativeLayout
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivSearch"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_search" />
+
+                    <EditText
+                        android:id="@+id/etDoctorMobileNumber"
+                        style="@style/NovCommonEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toStartOf="@+id/ivSearch"
+                        android:hint="Please enter doctor mobile number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relName"
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivUser"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_person" />
+
+                    <EditText
+                        android:id="@+id/etFullName"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ."
+                        style="@style/NovCommonEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivUser"
+                        android:hint="Name"
+                        android:inputType="textCapWords"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relEmail"
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivemail"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_email_blue"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        style="@style/NovCommonEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivemail"
+                        android:hint="Email ID"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvInstruction"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="By clicking connect you agree to invite your doctor to the app. An SMS will be sent with the invite link."
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSave"
+                    style="@style/NovAppCommonButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Connect"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+
+</layout>

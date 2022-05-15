@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightest_bg"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bottom_shadow"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp">
+                <RelativeLayout
+                    android:id="@+id/relTitleCOntainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        style="@style/TitleBackButton" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TitleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ivSearch"
+                        android:layout_toEndOf="@id/ivBack"
+                        android:fontFamily="@font/nunito_semi_bold"
+                        android:text="My Profile" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/ivSearch"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:src="@drawable/search_icon" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:id="@+id/linHeader"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:id="@+id/relImage"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/white_circle_blue_border">
+
+                            <ImageView
+                                android:id="@+id/ivProfileImage"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:src="@drawable/ic_user_image_blue" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linTitle"
+                            android:layout_toEndOf="@+id/relImage"
+                            android:layout_toStartOf="@+id/tvVerify"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tvName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/nunito_bold"
+                                    android:maxLength="20"
+                                    android:maxLines="1"
+                                    android:text="Varun Krishnan"
+                                    android:textColor="@color/font_light_blue"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvSpeciality"
+                                    android:layout_toEndOf="@+id/tvName"
+                                    android:text="MBBS, MDS"
+                                    android:fontFamily="@font/nunito_regular"
+                                    android:textColor="@color/font_light_black"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:maxLength="20"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_centerVertical="true"
+                                    android:visibility="gone"
+                                    />
+
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tvSubName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linTitle"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_toStartOf="@+id/tvVerify"
+                            android:layout_toEndOf="@+id/relImage"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/nunito_regular"
+                            android:maxLines="1"
+                            android:text="Basic Info, About Cancer, My CareGivers"
+                            android:textColor="@color/font_light_blue"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvVerify"
+                            android:text="Verify"
+                            android:textAllCaps="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="gone"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/nunito_bold"
+                            android:src="@drawable/ic_right_arrow"
+                            />
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_border"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:id="@+id/linSeperator"
+                        android:visibility="gone"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:id="@+id/relConnectionCOntainer">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/linButtons"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/nunito_regular"
+                            android:maxLines="2"
+                            android:text="Accept connection request?"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linButtons"
+                            android:orientation="horizontal"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            >
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/ic_yes_circular_blue"
+                                android:layout_marginEnd="@dimen/_12sdp"
+                                android:id="@+id/ivYes"
+                                />
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/ic_no_circular_red"
+                                android:id="@+id/ivNo"
+                                />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvResponsePending"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Invitation Pending"
+                        android:textColor="@color/delete_red_font"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/nunito_semi_bold"
+                        android:layout_below="@+id/ivSeperator"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:id="@+id/linMyPatient"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/NovProfileTitles"
+                    android:text="My Patient" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMyPatient"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        style="@style/ProfileOptionRelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:src="@drawable/ic_patient"
+                            />
+
+                        <TextView
+                            style="@style/ProfileOptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:text="My Patient"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:layout_alignParentEnd="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_gray_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    style="@style/NovProfileTitles"
+                    android:text="@string/my_counselors" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMyFavourites"
+                    style="@style/NovProfileTitles"
+                    android:text="My Favourites" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMyDoctors"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        style="@style/ProfileOptionRelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:src="@drawable/ic_my_doctors_blue"
+                            />
+
+                        <TextView
+                            style="@style/ProfileOptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:text="@string/my_doctors"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:layout_alignParentEnd="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_gray_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMyCC"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    >
+
+                    <LinearLayout
+                        style="@style/ProfileOptionRelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:src="@drawable/ic_my_cc_blue"
+                            />
+
+                        <TextView
+                            style="@style/ProfileOptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:id="@+id/tvMyCC"
+                            android:text="My Care Companion"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:layout_alignParentEnd="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_gray_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    style="@style/NovProfileTitles"
+                    android:text="@string/my_summery" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTrackGR"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp">
+
+                    <LinearLayout
+                        style="@style/ProfileOptionRelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:src="@drawable/ic_track_report_blue"
+                            />
+
+                        <TextView
+                            style="@style/ProfileOptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:text="@string/track_genetic_report"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:layout_alignParentEnd="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_gray_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSummary"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp">
+
+                    <LinearLayout
+                        style="@style/ProfileOptionRelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:src="@drawable/ic_summary"
+                            />
+
+                        <TextView
+
+                            style="@style/ProfileOptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:text="@string/view_summary"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:layout_alignParentEnd="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_gray_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTransactionHistory"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp">
+
+                    <LinearLayout
+                        style="@style/ProfileOptionRelLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/patient_profile_arrow_size"
+                            android:layout_height="@dimen/patient_profile_arrow_size"
+                            android:src="@drawable/ic_transaction_history_blue"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvEmergencyContacts"
+                            style="@style/ProfileOptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:text="Transaction History"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:layout_alignParentEnd="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_gray_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    style="@style/NovProfileTitles"
+                    android:text="@string/app" />
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linMyCareCode"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tvMyCareCode"
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="My Care Code"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            />
+                        <LinearLayout
+                            android:id="@+id/linInvite"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="@string/invite"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            />
+                        <LinearLayout
+                            android:id="@+id/linTerms"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="@string/terms_of_service_simple"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            />
+                        <LinearLayout
+                            android:id="@+id/linPrivacyPolicy"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="@string/privacy_policy_simple"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            />
+                        <LinearLayout
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="How it works?"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            android:visibility="gone"
+                            />
+                        <LinearLayout
+                            android:id="@+id/linFaq"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="@string/faq"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            />
+                        <LinearLayout
+                            android:id="@+id/linAbout"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="@string/about_4basecare"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            />
+                        <LinearLayout
+                            android:id="@+id/linAccountSettings"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="Account Settings"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/lightest_bg"
+                            />
+                        <LinearLayout
+                            android:id="@+id/linLogout"
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/ProfileOptionTextViewBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="Sign out"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_logout" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

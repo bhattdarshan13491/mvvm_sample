@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightest_bg"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layoutHeader"
+                layout="@layout/layout_nov_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_12sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="Invite and connect with your care giver on oncobuddy and let them be a part of your journey."
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivUserCGOne"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_person" />
+
+                    <EditText
+                        android:id="@+id/etCGOneName"
+                        style="@style/NovCommonEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivUserCGOne"
+                        android:hint="@string/please_enter_name"
+                        android:inputType="textCapWords"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivmobileNoCG1"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_mobile_no" />
+
+                    <EditText
+                        android:id="@+id/etMobileNumberCG1"
+                        style="@style/NovCommonEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivmobileNoCG1"
+                        android:hint="@string/please_enter_mobile_no"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/NovCommonEditTextBoxContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <Spinner
+                        android:id="@+id/spCGOneRelationShip"
+                        style="@style/NovCommonEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ivDropDOwnRelType"
+                        android:entries="@array/relationship_type" />
+
+                    <ImageView
+                        android:id="@+id/ivDropDOwnRelType"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/ic_dropdown_full" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvSignIn"
+                    style="@style/NovAppCommonButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:text="Add Care Giver" />
+
+            </LinearLayout>
+
+
+        </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+        <include
+            android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar" />
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relCOntainer"
+        android:background="@color/backgorung_clr">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="Consultation Fee"
+                        android:textColor="@color/font_light_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/nov_common_input_box">
+
+                        <EditText
+                            android:id="@+id/edFees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:layout_toStartOf="@+id/tvConsultation"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_medium"
+                            android:hint="Fees"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:textColor="@color/font_light_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvConsultation"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="Per Consultation"
+                            android:textColor="@color/font_light_blue" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:id="@+id/relSaveFees"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@drawable/button_background"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Save Fees"
+                            android:textColor="@color/white" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linBankForm">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="Select Payment Method"
+                            android:textColor="@color/font_light_black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="2">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_85sdp"
+                                android:id="@+id/relUpi"
+                                android:layout_weight="1"
+                                android:background="@drawable/blue_border_white_bg">
+
+                                <ImageView
+                                    android:id="@+id/ivUPI"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/upi" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ivUPI"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:text="Using UPI"
+                                    android:textColor="@color/font_light_blue" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relBankAcct"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_85sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:background="@color/cardview_light_background">
+
+                                <ImageView
+                                    android:id="@+id/ivBank"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:src="@drawable/bank" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ivBank"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:fontFamily="@font/nunito_medium"
+                                    android:text="Bank Account"
+                                    android:textColor="@color/font_light_black" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llUPI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="UPI ID"
+                            android:textColor="@color/font_light_black" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/etUPI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="Enter your UPI ID"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/font_light_blue" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linUpi"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="UPI Details"
+                            android:textColor="@color/font_light_black" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/edUpi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="UPI ID"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/font_light_blue" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/edUpiName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="Name as per Bank Details"
+                                android:imeOptions="actionDone"
+                                android:inputType="textCapCharacters"
+                                android:maxLines="1"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/font_light_blue" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:text="Please make sure these are your correct details as per your bank record. Any mismatch may cause issue during withdrawals"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/font_gray"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linBankDetails"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="Bank Account Details"
+                            android:textColor="@color/font_light_black" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/edAccountNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="Account No"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:inputType="text"
+                                android:imeOptions="actionNext"
+                                android:maxLines="1"
+                                android:textColor="@color/font_light_blue" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/edName"
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="Name as per Bank Details"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapCharacters"
+                                android:maxLines="1"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/font_light_blue" />
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/nov_common_input_box">
+
+                            <EditText
+                                android:id="@+id/edIFSCCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:layout_marginBottom="@dimen/_6sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/nunito_medium"
+                                android:hint="IFSC Code"
+                                android:inputType="textCapCharacters"
+                                android:imeOptions="actionDone"
+                                android:maxLines="1"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/font_light_blue" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:text="Please make sure these are your correct details as per your bank record. Any mismatch may cause issue during withdrawals"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/font_gray"
+                            />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:id="@+id/relContinue"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@drawable/button_background"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Save Details"
+                            android:textColor="@color/white" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relUpdatedMessage"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvBankName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Bank Details"
+                            android:textColor="@color/font_light_blue"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/tvStatusMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:text="Your bank account details have been captured successfully. Please reach to the customer care if there is any issue."
+                            android:textColor="@color/font_light_blue" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

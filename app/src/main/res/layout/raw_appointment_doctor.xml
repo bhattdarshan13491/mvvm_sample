@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardViewContainer"
+        android:layout_margin="@dimen/_5sdp"
+        style="@style/CommonCardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_6sdp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPic"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/square_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_toEndOf="@+id/ivPic"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvApptDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_medium"
+                            android:maxLines="1"
+                            android:text="On 22 August 2021 02:00 PM"
+                            android:textColor="@color/font_light_blue"
+                            android:textSize="@dimen/_9sdp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linStatus"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status : "
+                                android:fontFamily="@font/nunito_medium"
+                                android:textColor="@color/font_light_blue"
+                                android:textSize="@dimen/_10sdp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvStatusVal"
+                                android:text="Completed on : 12:30 pm 28 MAY 21"
+                                android:fontFamily="@font/nunito_medium"
+                                android:textColor="@color/font_light_blue"
+                                android:textSize="@dimen/_10sdp"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvDoctorName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/ivMenu"
+                            android:fontFamily="@font/nunito_medium"
+                            android:maxLines="1"
+                            android:text="Dr VenuGopal"
+                            android:textColor="@color/font_light_blue"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/ivMenu"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_more_vert_24" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvSpeciality"
+                        android:text="Oncology Specialist"
+                        android:fontFamily="@font/nunito_medium"
+                        android:textColor="@color/font_light_blue"
+                        android:textSize="@dimen/_10sdp"/>
+                    <ImageView
+                        android:id="@+id/ivDropDown"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:rotation="180"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvNotes"
+                        android:text="Notes"
+                        android:fontFamily="@font/nunito_medium"
+                        android:textColor="@color/font_light_blue"
+                        android:textSize="@dimen/_12sdp"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

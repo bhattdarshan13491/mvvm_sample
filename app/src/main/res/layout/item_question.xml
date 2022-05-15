@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardQuestionContainer"
+    android:visibility="gone"
+    android:layout_marginTop="@dimen/_12sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlQues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvQues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Question for the week"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/tvQues"
+                android:background="@color/lightest_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlQues"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvQuestion"
+                android:fontFamily="@font/nunito_medium"
+                tools:text="Which is the precautions of Cancer ? Lorem Ipsum
+is simply dummy text of the printing See more  "
+                android:textColor="@color/black" />
+            <ImageView
+                android:id="@+id/ivPost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:visibility="gone"
+                android:src="@drawable/background_day_hover" />
+
+
+            <TextView
+                android:id="@+id/tvCommentsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="1.4k Answered"
+                android:textColor="@color/font_blue" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/llDes"
+            android:background="@color/lightest_bg"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+
+        <LinearLayout
+            android:id="@+id/llReaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp">
+
+            <LinearLayout
+                android:id="@+id/linLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/ivLike"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/like_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvLikeCount"
+                    android:layout_marginStart="@dimen/_minus3sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/linAnswer">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/answer_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_minus3sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:gravity="center"
+                    android:text="Answer"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/div"
+            android:layout_alignEnd="@+id/llReaction"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_share_new" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:background="@drawable/bottom_shadow">
+
+            <LinearLayout
+                android:id="@+id/linTitleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                >
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:visibility="gone"
+                    style="@style/TitleBackButton" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appointments" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/linTitleActions"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/ic_share_circular_bg"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relSearchContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_shadow"
+                android:elevation="1dp"
+                android:padding="@dimen/_12sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edSearch"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toStartOf="@+id/ivClose"
+                    android:layout_toEndOf="@+id/ivSearch"
+                    android:background="@null"
+                    android:hint="Search by name, Date, Type, Tags etc..."
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:textColor="@color/title_text_color"
+                    android:textColorHint="@color/gray_font"
+                    android:textSize="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_close"
+                    app:tint="@color/title_text_color" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightest_bg">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/linUpcoming"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            >
+                            <TextView
+                                android:id="@+id/tvUpcomingAppointments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/NovAppointmentsTitle"
+                                android:text="@string/upcoming"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:id="@+id/linPast"
+                            >
+
+                            <TextView
+                                android:id="@+id/tvPastAppointments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/NovAppointmentsTitle"
+                                android:textColor="@color/gray_font"
+                                android:text="@string/past"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+
+                                android:layout_weight="1"
+                                android:id="@+id/ivUpcomingLine"
+                                android:visibility="visible"
+                                android:background="@color/reports_blue_title"
+                                />
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:id="@+id/ivPastLine"
+                                android:background="@color/gray_font"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/linUpcomingContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_12sdp">
+
+                            <TextView
+                                android:id="@+id/tvTodayAppointment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_semi_bold"
+                                android:text="Today\'s appointment"
+                                android:textColor="@color/font_light_black"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvToday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:layout_marginBottom="@dimen/_12sdp" />
+
+
+                            <TextView
+                                android:id="@+id/tvFollowupCall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_semi_bold"
+                                android:text="Follow up call"
+                                android:textColor="@color/font_light_black"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvFollowUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:layout_marginBottom="@dimen/_12sdp" />
+
+                            <TextView
+                                android:id="@+id/tvUpcomingTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_semi_bold"
+                                android:text="Upcoming appointments"
+                                android:textColor="@color/font_light_black"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_100sdp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/linPastAppts"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPastAppointments"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:layout_marginBottom="@dimen/_12sdp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/tvNoData"
+                                android:text="@string/no_records_found"
+                                android:gravity="center"
+                                android:textSize="@dimen/_16sdp"
+                                android:fontFamily="@font/rubik_medium"
+                                android:textColor="@color/gray_font"
+                                android:visibility="gone"
+                                />
+                        </RelativeLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_100sdp"/>
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            style="@style/NovFloatingButtonStyle" />
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

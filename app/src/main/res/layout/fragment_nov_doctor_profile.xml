@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightest_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_shadow"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/relTitleCOntainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="1dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivBack"
+                            style="@style/TitleBackButton" />
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            style="@style/TitleTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/ivSearch"
+                            android:layout_toEndOf="@id/ivBack"
+                            android:fontFamily="@font/nunito_semi_bold"
+                            android:text="My Profile" />
+
+                        <ImageView
+                            android:id="@+id/ivSearch"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:src="@drawable/profile_share_img_"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/relImage"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_alignParentStart="true"
+                                android:background="@drawable/white_circle_blue_border">
+
+                                <ImageView
+                                    android:id="@+id/ivProfileImage"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:src="@drawable/ic_user_image_blue" />
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/relImage"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/nunito_bold"
+                                        android:maxLength="20"
+                                        android:maxLines="1"
+                                        android:text="Dr Varun Krishnan"
+                                        android:textColor="@color/font_light_blue"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/tvHospitalName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/linTitle"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/relImage"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/nunito_regular"
+                                android:maxLines="1"
+                                android:text="Education, specialiazation, Experience "
+                                android:textColor="@color/font_light_blue"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_16sdp"
+                                android:fontFamily="@font/nunito_bold"
+                                app:tint="@color/colorAccent"
+                                android:src="@drawable/ic_right_arrow" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardProfileVerify"
+                    style="@style/CommonProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_12sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivPending"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:src="@drawable/pending_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_toRightOf="@+id/ivPending"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/nunito_regular"
+                            android:maxLines="2"
+                            android:text="Profile Completion pending"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            style="@style/ProfileOptionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:text="Verify" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    style="@style/NovProfileTitles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="Wallet" />
+
+                <RelativeLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/button_wallet_bg">
+
+
+                    <ImageView
+                        android:id="@+id/ivWallet"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/wallet_img"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvWallet"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="My Wallet"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tvWalletBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvWallet"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivWallet"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="22,300"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <Button
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:textAllCaps="false"
+                        android:paddingStart="@dimen/_16sdp"
+                        android:paddingEnd="@dimen/_16sdp"
+                        android:background="@drawable/rounded_white"
+                        android:text="Withdraw"/>
+
+                    <TextView
+                        android:id="@+id/tvTransactionHistory"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/transaction_history"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_12sdp">
+
+                    <TextView
+                        style="@style/NovProfileTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Code" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardQRCode"
+                        style="@style/CommonProfileCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:src="@drawable/ic_qr_code" />
+
+                            <TextView
+                                style="@style/ProfileOptionTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="QR Code" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        style="@style/NovProfileTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:text="Consultation" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardConsultation"
+                        style="@style/CommonProfileCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:src="@drawable/ic_fees" />
+
+                            <TextView
+                                style="@style/ProfileOptionTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="Consultation Fee and Time Settings" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardBankAcc"
+                        style="@style/CommonProfileCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+                        <LinearLayout
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:src="@drawable/ic_bank_details" />
+
+                            <TextView
+                                style="@style/ProfileOptionTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="Bank Account Details" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        style="@style/NovProfileTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:text="Establishment" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardEstablishment"
+                        style="@style/CommonProfileCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            style="@style/ProfileOptionRelLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/patient_profile_arrow_size"
+                                android:layout_height="@dimen/patient_profile_arrow_size"
+                                android:src="@drawable/ic_establishments" />
+
+                            <TextView
+                                style="@style/ProfileOptionTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:text="My Establishments" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/patient_profile_arrow_size"
+                                    android:layout_height="@dimen/patient_profile_arrow_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/ic_gray_arrow" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        style="@style/NovProfileTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:text="@string/app" />
+
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/CommonProfileCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linInvite"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="Refer" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_gray_arrow" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+                            <LinearLayout
+                                android:id="@+id/linTerms"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="@string/terms_of_service_simple" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_gray_arrow" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+                            <LinearLayout
+                                android:id="@+id/linPrivacyPolicy"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="@string/privacy_policy_simple" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_gray_arrow" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="How it works?" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_gray_arrow" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+                            <LinearLayout
+                                android:id="@+id/linFaq"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="@string/faq" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_gray_arrow" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+                            <LinearLayout
+                                android:id="@+id/linAbout"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="@string/about_4basecare" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_gray_arrow" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+                            <LinearLayout
+                                android:id="@+id/linAccountSettings"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="Account Settings" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_gray_arrow" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@color/lightest_bg" />
+
+                            <LinearLayout
+                                android:id="@+id/linLogout"
+                                style="@style/ProfileOptionRelLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/ProfileOptionTextViewBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:text="Sign out" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/patient_profile_arrow_size"
+                                        android:layout_height="@dimen/patient_profile_arrow_size"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_logout" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <include
+            android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar" />
+    </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+</layout>

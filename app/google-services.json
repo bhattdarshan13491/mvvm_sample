@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "880434711808",
+    "project_id": "ob-live-5bf4d",
+    "storage_bucket": "ob-live-5bf4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880434711808:android:6f138e232a4fe4301237e5",
+        "android_client_info": {
+          "package_name": "com.oncobuddy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880434711808-gao6egi1s2sg29ndb2k7pf7umjg3v1aj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oncobuddy.app",
+            "certificate_hash": "33b8178e4562902608c71a0da7836e40e812c088"
+          }
+        },
+        {
+          "client_id": "880434711808-0hfcq51pba8qms0c967g3eaeg69gtkbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrZupscFlilbxHYiDNzDzj_06WqgOKdkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880434711808-0hfcq51pba8qms0c967g3eaeg69gtkbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

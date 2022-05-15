@@ -1,0 +1,445 @@
+<resources>
+    <string name="app_name">OncoBuddy</string>
+    <string name="mix_panel_token">5aeda5e9ddbf5d68b0d0447b74b62b87</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login Now</string>
+    <string name="login_to_your_account">Sign in to your account</string>
+    <string name="remember_me">Remember me</string>
+    <string name="signup_here">Signup here</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="full_name">Full name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register_now">Register Now</string>
+    <string name="profile_setup">Profile Setup</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="address">Enter address</string>
+    <string name="verify_your_account">Verify your account</string>
+    <string name="verify_now">Verify Now</string>
+    <string name="enter_your_mobile_number">Enter mobile number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="enter_date_of_birth">Enter date of birth</string>
+    <string name="add_record">Add Record</string>
+    <string name="choose_from_media">Upload\nPDF</string>
+
+    <string name="record_type">Record type</string>
+    <string name="are_you_sure_you_want_to_delete_this_record">Are you sure you want to delete this record?</string>
+    <string name="are_you_sure_you_want_to_delete_this_comment">Are you sure you want to delete this comment?</string>
+    <string name="are_you_sure_you_want_to_delete_this_post">Are you sure you want to delete this post?</string>
+    <string name="are_you_sure_you_want_to_send_rr">Are you sure you want to send reschedule request to the patient?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="appointments">Appointments</string>
+    <string name="create_new_appointment">Create New Appointment</string>
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="past_appointments">Past appointments</string>
+    <string name="view">View</string>
+    <string name="report_type">Report Categories</string>
+    <string name="appointment_id">Appointment ID : </string>
+    <string name="name">Name</string>
+    <string name="purpose">Purpose</string>
+    <string name="doctor_details">Doctor Details :</string>
+    <string name="new_appointment">New Appointment</string>
+    <string name="select_doctor">Select Doctor</string>
+    <string name="doctor_name">Enter doctor Name</string>
+    <string name="select_time_slot">Select time slot</string>
+    <string name="continue_1">Continue</string>
+    <string name="apply_filter">Apply Filters</string>
+    <string name="filters">Filters</string>
+    <string name="date">Date</string>
+    <string name="are_you_sure_you_want_to_cancel_this_appointment">Are you sure you want to cancel this appointment?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="go_back_to_appointments">Go back to Appointments</string>
+    <string name="msg_add_care_taker">Would you like to add a family member or care giver during the appointment?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="message">Message</string>
+    <string name="confirm">Confirm</string>
+    <string name="please_enter_relative_name">Please enter member name</string>
+    <string name="add_member">ADD MEMBER</string>
+    <string name="add_doctor_s_name">Add Doctor\'s Name</string>
+    <string name="add_doctor">Add Doctor</string>
+    <string name="add_patient">Add Patient</string>
+    <string name="view_all">View all</string>
+
+    <string name="select_file">Select File</string>
+    <string name="scan_report_using_camera">Upload Image</string>
+    <string name="update_record">Update Record</string>
+
+    <string name="permission_necessary">Permissions needed</string>
+    <string name="external_storage_permission_needed">File access permissions needed to show file.</string>
+    <string name="goto_settings">Goto Settings</string>
+    <string name="document_preview">Document Preview</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_doctors">My Doctors</string>
+    <string name="doctors">Doctors</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="my_caregiver">My Caregiver</string>
+    <string name="app_help">App help</string>
+    <string name="about_4basecare">About 4BaseCare</string>
+    <string name="msg_permission_denied">Permission Denied</string>
+    <string name="msg_permission_from_settings">Permission is denied, Please allow permissions from App Settings.</string>
+    <string name="msg_allow_permission">Please allow request permission</string>
+    <string name="title_app_settings">App Settings</string>
+    <string name="scan_report">Scan report</string>
+    <string name="save">Save</string>
+    <string name="selected_images">Selected images</string>
+
+    <string name="validation_enter_name">Please enter your name</string>
+    <string name="validation_enter_role">Please select your role</string>
+    <string name="validation_enter_email">Please enter your email</string>
+    <string name="validation_verify_mobile_number">Please verify your mobile number</string>
+    <string name="validation_enter_valid_email">Please enter valid email</string>
+    <string name="validation_enter_mobile_number">Please enter mobile number</string>
+    <string name="validation_invalid_mobile_number">Mobile number should contain exact 10 digits</string>
+    <string name="validation_mobile_number_repeated">This number is already added</string>
+    <string name="validation_enter_consultation_fees">Please enter consultation fees</string>
+    <string name="validation_enter_minimum_consultation_fees">Consultation fees should be atleast 100 rs.</string>
+    <string name="validation_enter_specialization">Please enter specialization</string>
+    <string name="validation_enter_hospital">Please select hospital</string>
+    <string name="validation_enter_designation">Please enter designation</string>
+    <string name="validation_enter_valid_location">Please enter location from suggestions only</string>
+    <string name="validation_enter_password">Please enter your password</string>
+    <string name="validation_enter_confirm_password">Please confirm your password</string>
+    <string name="validation_passwords_not_same">Passwords are not same!</string>
+    <string name="validation_terms_not_read">Please read Terms and Conditions before proceeding</string>
+    <string name="validation_privacy_policy_read">Please read privacy policy before proceeding</string>
+    <string name="validation_agree_terms_privacy_policy">Please agree Terms and Conditions and Privacy Policy before proceeding</string>
+    <string name="validation_password_min_length">Password should contain atleast 6 letters.</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+    <string name="report_tags">Report Sub Categories</string>
+
+    <string name="default_notification_channel_id" translatable="false">four_base_care_notifications</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="no_records_found">No record found!</string>
+    <string name="no_appointment_found">No appointment found!</string>
+    <string name="next">Next</string>
+    <string name="select_doctor_msg">Please select doctor to get time slots</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+    <string name="please_check_internet_connection">Please check your internet connection</string>
+    <string name="record_added_successfully">Your record has been added successfully!</string>
+    <string name="go_back_to_record_listings">Go back to Records</string>
+    <string name="validation_select_doctor">Please select doctor</string>
+    <string name="validation_select_appointment_time">Please select appointment time</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="select_cancer_type">Select cancer type</string>
+    <string name="select_cancer_subtype">Select Cancer Subtype</string>
+    <string name="you_cant_change_your_number">You cannot change your phone number.</string>
+    <string name="you_cant_change_your_email">You cannot change your E mail.</string>
+    <string name="you_cannot_add_more_than_3_emergency_contact">You cannot add more than 3 emergency contacts</string>
+    <string name="emergency_contact_listing">Emergency contact listing</string>
+    <string name="no_sub_type_found">No sub types found for this cancer type.</string>
+    <string name="forgot_password">Forgot password</string>
+
+    <string name="submit">Submit</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="permissions_needed">Permissions needed</string>
+    <string name="appointment_room">Appointment room</string>
+    <string name="skip">Skip</string>
+    <string name="secure_payments_by_razorpay">Secure Payments by Razorpay</string>
+    <string name="validation_enter_otp">Please enter an OTP</string>
+    <string name="validation_enter_new_password">Please enter new password</string>
+    <string name="skip_to_login">Skip to Login ></string>
+    <string name="let_us_help_you">Let us help you</string>
+    <string name="platform">Platform</string>
+    <string name="login_title">Login</string>
+    <string name="register_here">Register here!</string>
+    <string name="not_a_user_yet">Not a user yet?</string>
+    <string name="enter_the_otp_sent_to_your_phone">Enter the OTP sent to your phone</string>
+    <string name="not_correct">Not correct?</string>
+    <string name="kindly_fill_the_details_below">Kindly fill the details below</string>
+    <string name="care_taker">Care Giver</string>
+    <string name="fill_your_care_taker_s_details">Fill your care giver\'s details</string>
+    <string name="fill_your_care_assistant_s_details">Fill your care assistant\'s details</string>
+    <string name="doctor">Doctor</string>
+    <string name="patient">Patient</string>
+    <string name="just_a_knowledge_seeker">Just a Knowledge Seeker</string>
+    <string name="select_role">Select Role</string>
+    <string name="who_are_you_tell_about_yourself_for_a_better_experience">Please select your role for a better experience</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="already_a_user">Already a user?</string>
+    <string name="login_here">Login here!</string>
+    <string name="back">&lt; Back</string>
+    <string name="secure_your_records">Secure your records!</string>
+    <string name="now_add_your_documents_before_booking_an_appointment_with_your_doctor_and_forget_about_losing_them_again_forever">Now add your documents before booking an appointment with your doctor and forget about losing them again forever.</string>
+    <string name="upload_now">Upload Now</string>
+    <string name="total_size">Total Size</string>
+    <string name="reports">Reports</string>
+    <string name="bills">Bills</string>
+    <string name="read_more"><u>Read more</u></string>
+    <string name="trending_forums">TRENDING BLOGS</string>
+
+    <string name="home">Home</string>
+    <string name="records">Records</string>
+    <string name="patients">Patients</string>
+    <string name="comments">Comments</string>
+    <string name="video">Video</string>
+
+
+    <string name="get_in_touch">Get in touch</string>
+    <string name="cancer_type_colon">Cancer type :</string>
+    <string name="sub_cancer_type_colon">Sub type :</string>
+
+    <string name="headline">Headline</string>
+    <string name="designation">Designation</string>
+    <string name="specialization">Specialization</string>
+
+
+    <!--Twilio strings -->
+
+    <!--  Room Screen  -->
+    <string name="room_screen_pin_icon_description">Participant Pin</string>
+
+    <!--  Notifications  -->
+
+    <!--  Settings Screen  -->
+    <string name="settings_screen_enable_network_quality_level_description">Network Quality Level</string>
+
+    <string name="join_room">Join Room</string>
+    <string name="room_status">Room Status</string>
+    <string name="you">You</string>
+    <string name="audio_toggle">Audio toggle</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="consultation_fees">Virtual consultation fees</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="my_patients">My Patients</string>
+    <string name="transactions">Last Transactions</string>
+    <string name="close">Close</string>
+    <string name="ok">OK</string>
+    <string name="login_using_password">Login using password</string>
+    <string name="enter_your_email">Enter E mail or phone number</string>
+    <string name="ask">Submit</string>
+    <string name="care_taker_capital">CARE GIVER</string>
+    <string name="emergency_contacts">Emergency contacts</string>
+    <string name="search_your_tag">Search Your tag</string>
+    <string name="notes">Notes</string>
+    <string name="enter_notes_about_your_appointment">Want to share anything with the doctor?</string>
+    <string name="no_notes_available">No notes available</string>
+    <string name="live">Live</string>
+    <string name="back_to_my_appointments">Back to My Appointments</string>
+    <string name="no_tag_selected">No tag selected</string>
+    <string name="please_add_mobile_number_or_email">Please enter mobile number or e mail</string>
+    <string name="check_tags">Check Tags</string>
+    <string name="hide">Hide</string>
+    <string name="oncohub">OncoHub</string>
+    <string name="buddy_tips">Buddy Tips</string>
+    <string name="videos">Videos</string>
+    <string name="view_ecrf_events">View treatment history</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="add_care_giver">Add Care Giver</string>
+    <string name="mon">MON</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="available_times">Available times</string>
+    <string name="availibility">Availability</string>
+    <string name="consultation_time">Consultation time(Minutes)</string>
+    <string name="edit_timings">Edit Timings</string>
+    <string name="go_back_to_home">Go back to Home</string>
+    <string name="go_back_to_consultation">Done</string>
+    <string name="go_back_to_patient_list">Go back to Patients</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="change_password">Change password</string>
+    <string name="no_appointments_for_today">No appointments for today</string>
+    <string name="my_questions">My Discussions</string>
+    <string name="start_new_discussion">Start new discussion</string>
+    <string name="specialization_colon">Specialization :</string>
+    <string name="designtation">Designtation :</string>
+    <string name="year_of_experience">Experience :</string>
+    <string name="vouchers_list">Vouchers list</string>
+    <string name="total">Total :</string>
+    <string name="apply">Apply</string>
+    <string name="remove_care_taker">Remove</string>
+    <string name="update_app">Update App</string>
+    <string name="dialog_update_available_message">New update available</string>
+    <string name="update_now">Update now</string>
+    <string name="later">Later</string>
+    <string name="gender">Gender</string>
+    <string name="remove_image">Remove image</string>
+    <string name="contact_us">Contact us</string>
+    <string name="add_image">Add Image</string>
+    <string name="book_an_appointment">Book an appointment</string>
+    <string name="current_location">Current location</string>
+    <string name="no_doctors_found">No doctors found</string>
+    <string name="send_otp">Send OTP</string>
+
+    <!-- Nov designs strings -->
+
+    <string name="create_an_account"><u>Create Account</u></string>
+    <string name="enter_password">Password</string>
+    <string name="sign_in_using_otp">Sign In using OTP</string>
+    <string name="sign_in_using_password">Sign In using Password</string>
+    <string name="reset_pwd">Reset Password</string>
+    <string name="confirm_otp">Confirm OTP</string>
+    <string name="create_new_password">Create new password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_mobile_no">Please enter mobile number</string>
+    <string name="terms_of_service"><u>Terms &amp; Conditions</u></string>
+    <string name="terms_of_service_simple">Terms &amp; Conditions</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="privacy_policy_simple">Privacy Policy</string>
+    <string name="and"> &amp; </string>
+    <string name="save_and_continue">Save &amp; continue</string>
+    <string name="u_sign_in"><u>Sign In</u></string>
+    <string name="add_more">Add More</string>
+    <string name="please_enter_an_email">Please enter an email</string>
+    <string name="verify">Verify</string>
+    <string name="verified">Verified</string>
+    <string name="report_date">Report Date :</string>
+    <string name="share_what_s_in_your_mind">Share what\'s in your mind</string>
+    <string name="report_details">Medical Records Details</string>
+    <string name="view_report">View</string>
+    <string name="download_report"><u>Download Report</u></string>
+    <string name="track_test_report">Track Test Report</string>
+
+
+   <string-array name="sign_up_as">
+        <item>Sign up as</item>
+        <item>Patient</item>
+        <item>Care Giver</item>
+        <item>Oncologist</item>
+    </string-array>
+
+<!-- <string-array name="sign_up_as">
+        <item>Sign up as</item>
+        <item>Patient</item>
+        <item>Oncologist</item>
+    </string-array>-->
+
+    <string-array name="report_types">
+        <item>Report</item>
+        <item>Prescription</item>
+        <item>Bill</item>
+    </string-array>
+
+    <string-array name="primary_cancer_site">
+        <item>Select Primary Cancer Site</item>
+
+    </string-array>
+
+    <string-array name="primary_cancer_location">
+        <item>Select Secondary Cancer Location</item>
+    </string-array>
+
+    <string-array name="cancer_stage">
+        <item>Select Cancer Stage</item>
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+    </string-array>
+
+    <string-array name="relationship_type">
+        <item>Relationship Type</item>
+        <item>Spouse</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Parent</item>
+        <item>Sibling</item>
+        <item>Other</item>
+    </string-array>
+f4`                     1
+    <string-array name="specialization">
+        <item>Specialization</item>
+        <item>Medical Oncology</item>
+        <item>Gynaecologic Oncology</item>
+        <item>Neuro-oncology</item>
+        <item>Gastrointestinal (GI) Oncology</item>
+        <item>Gynecologist Oncology</item>
+        <item>Head and Neck Oncology</item>
+        <item>Breast Oncology</item>
+        <item>Hematology Oncology</item>
+        <item>Orthopedic Oncology</item>
+    </string-array>
+    <string-array name="degrees_array">
+        <item>Degree</item>
+        <item>MBBS</item>
+        <item>MDS</item>
+        <item>MS</item>
+        <item>MD</item>
+        <item>MCh</item>
+        <item>DM</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="council">
+        <item>Council</item>
+        <item>MCI</item>
+        <item>NMC</item>
+    </string-array>
+    <string-array name="branch">
+        <item>Branch</item>
+    </string-array>
+    <string-array name="practice_type">
+        <item>Select</item>
+        <item>My own Clinic</item>
+        <item>I am visiting Hospital</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Mr</item>
+        <item>Mrs</item>
+    </string-array>
+    <string-array name="status">
+        <item>DNA</item>
+        <item>RNA</item>
+        <item>PDL -1</item>
+    </string-array>
+    <string name="select_date_and_timeslot">Select Date and Time Slot</string>
+    <string name="available_slots">Available Slots</string>
+    <string name="add_caregiver_to_appointment">Add Caregiver</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="booking_confirmed">Booking confirmed</string>
+    <string name="select_primary_cancer_site">Select Primary Cancer Site <font color='#d32a4a'>*</font></string>
+    <string name="my_counselors">My Counselors</string>
+    <string name="my_summery">My Summary</string>
+    <string name="app">App</string>
+    <string name="track_genetic_report">View Genetic Report</string>
+    <string name="invite">Invite</string>
+    <string name="faq">FAQ</string>
+
+    <string name="resend_otp_uline"><u>Resend OTP</u></string>
+    <string name="connect_with_your_doctor_on_oncobuddy_by_entering_doctor_code_or_search_using_mobile_number">Connect with your doctor on oncobuddy by entering doctor code or search using mobile number.</string>
+    <string name="basic_info">Basic Info</string>
+    <string name="about_cancer">About Cancer</string>
+    <string name="my_caregivers">My Caregivers</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="dob">DOB</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="aadhar">Aadhar No</string>
+    <string name="care_companion">Care companion</string>
+    <string name="my_care_code">My Care Code</string>
+    <string name="email_id_or_mobile_no">Email Id or Mobile no</string>
+    <string name="transaction_history"><u>Transaction History</u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="validation_2_caregivers_max">Maximum 2 care givers allowed.</string>
+    <string name="transaction_history_u"><u>Transaction History</u></string>
+    <string name="profile_completion">Profile Completion</string>
+    <string name="complete_your_profile">Complete Your Profile</string>
+    <string name="to_access_all_features">to access all features</string>
+    <string name="today_s_n_appointments">Today\'s\nAppointments</string>
+    <string name="total_no_of_npatients">Total\nPatients</string>
+    <string name="terms_for_deletion"> If you want to a purge all your records, please send an email to optout@4basecare.com.</string>
+    <string name="tap_to_reload">Tap to reload</string>
+    <string name="error_msg_unknown">Error message unknown</string>
+    <string name="total_patients_supported"><u>Total Patients\nSupported</u></string>
+    <string name="select_appointment_date">Select Date</string>
+    <string name="doctor_intro_title">Private Virtual Clinic</string>
+    <string name="check_status">Check Status</string>
+    <string name="view_reports">View Reports</string>
+    <string name="chat">Chat</string>
+    <string name="view_summary">View Summary</string>
+    <string name="connect_with_onco_psychologists_to_seek_mental_and_emotional_balance_nconnect_with_nutrionists_to_get_a_personalized_diet_chart_based_on_your_treatments">Connect with Onco-Psychologists to seek mental and emotional balance\nConnect with Nutrionists to get a personalized diet chart based on your treatments</string>
+    <string name="seek_guidance_and_support_virtually">Seek guidance and support virtually</string>
+    <string name="allied_services">Allied Services</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+</resources>

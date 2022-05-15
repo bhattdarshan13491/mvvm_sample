@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:background="@drawable/slot_card_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/font_blue"
+            android:padding="@dimen/_15sdp"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_add_member"
+                android:layout_marginEnd="@dimen/_5sdp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:text="@string/add_doctor"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textAllCaps="true"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AddMedicalRecordsTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ."
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:hint="@string/please_enter_relative_name"
+                android:includeFontPadding="true"
+                android:paddingBottom="@dimen/_12sdp"
+                android:textColor="@color/title_text_color"
+                android:textColorHint="@color/gray_font"
+                android:textSize="@dimen/_12sdp"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:longClickable="false"
+                />
+
+
+            <TextView
+                style="@style/AddMedicalRecordsTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/mobile_number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edMobileNumber"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Enter mobile number"
+                android:includeFontPadding="true"
+                android:paddingBottom="@dimen/_12sdp"
+                android:textColor="@color/title_text_color"
+                android:textColorHint="@color/gray_font"
+                android:textSize="@dimen/_12sdp"
+                android:inputType="phone"
+                android:imeOptions="actionDone" />
+
+
+            <TextView
+                style="@style/AddMedicalRecordsTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:text="@string/message" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:hint="@string/please_enter_relative_name"
+                android:includeFontPadding="true"
+                android:paddingBottom="@dimen/_12sdp"
+                android:textColor="@color/title_text_color"
+                android:textColorHint="@color/gray_font"
+                android:textSize="@dimen/_12sdp"
+                android:lines="2"
+                android:maxLines="2"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+                    <Button
+                        android:id="@+id/btnNo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/AppCommonButton"
+                        android:background="@drawable/cancel_button_white_bg"
+                        android:textColor="@color/text_dark_gray"
+                        android:text="@string/cancel"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+                    <Button
+                        android:id="@+id/btnYes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/AppCommonButton"
+                        android:text="@string/confirm"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+</layout>

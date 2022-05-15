@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightest_bg"
+        tools:context=".views.activities.NovDoctorDetailsActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/rlDocActBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:background="@drawable/blue_bg_one_side_rounded">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_6sdp">
+
+                <ImageView
+                    android:id="@+id/ivBackArrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/ivBackArrow"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Doctor"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/share_img" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDoctorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:background="@drawable/rounded_white">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btBookConsultation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:minWidth="@dimen/_120sdp"
+                    android:background="@drawable/rounded_blue_bg"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:text="Connect"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvFees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btBookConsultation"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/nunito_medium"
+                    android:lines="2"
+                    android:text="Fee Rs 1500 per\nConsultation"
+                    android:textColor="@color/reports_blue_title"
+                    android:visibility="gone"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_70sdp">
+
+                <TextView
+                    android:id="@+id/tvDoctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Dr Varun Krishnan"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvQualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@+id/tvDoctorName"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="MBBS, MDS"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tvSpeciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@+id/tvQualification"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="Medical Oncologist"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tvExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_below="@+id/tvSpeciality"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="5 Years of Experience"
+                    android:textColor="@color/reports_blue_title"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:id="@+id/ivProfileBG"
+            android:layout_marginStart="@dimen/_27sdp"
+            android:layout_marginTop="@dimen/_76sdp"
+            android:src="@drawable/profile_bg"/>
+
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:src="@drawable/doctor_profile_img" />
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:id="@+id/ivVerified"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:src="@drawable/verified_icon" />
+
+        <TextView
+            android:id="@+id/tvVerified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:background="@drawable/light_green_bg"
+            android:fontFamily="@font/nunito_medium"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="Verified"
+            android:textColor="@color/green_button"
+            android:textSize="@dimen/_8sdp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlDoctorDetails"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:background="@drawable/rounded_white"
+            android:padding="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="About :"
+                android:textColor="@color/reports_blue_title"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvAboutVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAbout"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/nunito_medium"
+                tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+                android:textColor="@color/reports_blue_title"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

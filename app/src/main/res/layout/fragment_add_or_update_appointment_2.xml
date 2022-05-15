@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/lightest_bg">
+   <LinearLayout
+       android:id="@+id/linTitleContainer"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/bottom_shadow"
+       android:elevation="1dp"
+       android:gravity="center_vertical"
+       android:orientation="horizontal"
+       android:paddingStart="@dimen/_5sdp"
+       android:paddingTop="@dimen/_10sdp"
+       android:paddingEnd="@dimen/_5sdp"
+       android:paddingBottom="@dimen/_10sdp">
+
+      <ImageView
+          android:id="@+id/ivBack"
+          style="@style/TitleBackButton" />
+
+      <TextView
+          android:id="@+id/tvTitle"
+          style="@style/TitleTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/new_appointment" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="end"
+          android:visibility="gone"
+          android:orientation="horizontal">
+         <ImageView
+             android:layout_width="@dimen/medical_records_title_icons_size"
+             android:layout_height="@dimen/medical_records_title_icons_size"
+             android:layout_marginEnd="@dimen/_5sdp"
+             android:padding="@dimen/_5sdp"
+             android:src="@drawable/ic_download"
+             app:tint="@color/colorPrimary" />
+
+      </LinearLayout>
+
+   </LinearLayout>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="@dimen/_12sdp"
+       android:layout_above="@+id/layoutCOntinue"
+       android:layout_below="@+id/linTitleContainer"
+       android:scrollbars="none"
+       android:fillViewport="true"
+       android:background="@color/lightest_bg">
+   <com.oncobuddy.app.utils.container_classes.SlidingLinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/select_doctor"
+          style="@style/AddMedicalRecordsTitles"/>
+
+      <AutoCompleteTextView
+          android:id="@+id/etDoctor"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:clickable="true"
+          android:focusable="false"
+          android:editable="false"
+          style="@style/CommonEditBox"
+          android:hint="@string/doctor_name"
+          android:layout_marginTop="@dimen/_5sdp"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/select_date_and_timeslot"
+          style="@style/AddMedicalRecordsTitles"
+          android:layout_marginTop="@dimen/_10sdp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:weightSum="2"
+          android:orientation="horizontal">
+
+         <RelativeLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/linDate"
+             android:layout_alignParentEnd="true"
+             android:background="@drawable/rounded_blue_border_white_bg"
+             android:orientation="horizontal"
+             android:padding="@dimen/_10sdp"
+             android:gravity="center_vertical"
+             android:layout_weight="1"
+             android:layout_marginEnd="@dimen/_6sdp"
+             >
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Select Date"
+                android:textColor="@color/font_light_blue"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/ic_calender_blue"/>
+
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/linTime"
+             android:layout_alignParentEnd="true"
+             android:background="@drawable/rounded_blue_border_white_bg"
+             android:orientation="horizontal"
+             android:padding="@dimen/_10sdp"
+             android:gravity="center_vertical"
+             android:layout_weight="1"
+             android:layout_marginStart="@dimen/_6sdp">
+
+            <TextView
+                android:id="@+id/tvTImeSlot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito_medium"
+                android:text="@string/select_time_slot"
+                android:textColor="@color/font_light_blue"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/ic_clock"
+                app:tint="@color/font_light_blue" />
+
+
+         </RelativeLayout>
+
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/available_slots"
+          style="@style/AddMedicalRecordsTitles"
+          android:layout_marginTop="@dimen/_10sdp"/>
+
+
+      <com.oncobuddy.app.utils.custom_views.ExpandableHeightGridView
+          android:id="@+id/gvSelectTimeSlot"
+          android:layout_width="wrap_content"
+          android:layout_marginTop="@dimen/_6sdp"
+          android:layout_height="@dimen/_100sdp"
+          android:isScrollContainer="false"
+          tools:listitem="@layout/time_slot"
+          android:gravity="center"
+          android:scrollbars="vertical"
+          android:numColumns="2"/>
+
+      <TextView
+          style="@style/AddMedicalRecordsTitles"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          android:text="@string/notes" />
+
+      <EditText
+          android:id="@+id/etNotes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/CommonEditBox"
+          android:hint="@string/enter_notes_about_your_appointment"
+          android:lines="3"
+          android:maxLines="3"
+          android:gravity="start|top"
+          android:padding="@dimen/_10sdp"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/linAddPatient"
+          android:visibility="gone"
+          android:orientation="vertical"
+          >
+
+         <TextView
+             style="@style/AddMedicalRecordsTitles"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:layout_marginBottom="@dimen/_5sdp"
+             android:text="Add Patient" />
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/relCardCG">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                style="@style/CommonCardView"
+                >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/_12sdp"
+                   android:id="@+id/relMainCOntainer"
+                   android:orientation="horizontal"
+                   >
+
+                  <LinearLayout
+                      android:layout_width="@dimen/_40sdp"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:orientation="vertical">
+                     <ImageView
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:id="@+id/ivPatientImage"
+                         android:layout_alignParentStart="true"
+                         android:layout_alignParentTop="true"
+                         android:src="@drawable/ic_user_image" />
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_10sdp"
+                      android:orientation="vertical">
+
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/linAdd"
+                            android:orientation="vertical">
+                           <TextView
+                               android:id="@+id/tvPatientName"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_centerVertical="true"
+                               android:ellipsize="end"
+                               android:fontFamily="@font/nunito_medium"
+                               android:maxLines="2"
+                               tools:text="MRI Scan"
+                               android:textColor="#e6162758"
+                               android:textSize="@dimen/_12sdp"
+                               android:textStyle="bold" />
+
+                           <TextView
+                               android:id="@+id/tvPatientRelation"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_centerVertical="true"
+                               android:ellipsize="end"
+                               android:fontFamily="@font/nunito_medium"
+                               android:maxLines="2"
+                               android:text="Other"
+                               android:textColor="@color/splash_title_color"
+                               android:textSize="@dimen/_10sdp"
+                               android:textStyle="bold" />
+
+                           <TextView
+                               android:id="@+id/tvPatientPhoneNumber"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_centerVertical="true"
+                               android:ellipsize="end"
+                               android:fontFamily="@font/nunito_medium"
+                               android:maxLines="2"
+                               android:textColor="@color/splash_title_color"
+                               android:textSize="@dimen/_10sdp"
+                               android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@drawable/rounded_blue_border"
+                            android:gravity="center"
+                            android:minWidth="@dimen/_90sdp"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/_6sdp"
+                            android:paddingBottom="@dimen/_6sdp">
+
+                           <ImageView
+                               android:id="@+id/ivAdd"
+                               android:layout_width="@dimen/_18sdp"
+                               android:layout_height="@dimen/_18sdp"
+                               android:layout_marginEnd="@dimen/_6sdp"
+                               android:src="@drawable/ic_add_box_blue" />
+
+                           <TextView
+                               android:id="@+id/tvAdd"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:ellipsize="end"
+                               android:fontFamily="@font/nunito_medium"
+                               android:text="Add"
+                               android:textColor="@color/font_light_blue"
+                               android:textSize="@dimen/_12sdp"
+
+                               />
+
+
+                        </LinearLayout>
+
+
+                     </RelativeLayout>
+                  </LinearLayout>
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+         </RelativeLayout>
+      </LinearLayout>
+
+
+      <TextView
+          style="@style/AddMedicalRecordsTitles"
+          android:id="@+id/tvAddCareGiver"
+          android:visibility="gone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_marginBottom="@dimen/_5sdp"
+          android:text="@string/add_caregiver_to_appointment" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/rvCaregivers"
+          />
+
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_50sdp"/>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:id="@+id/linContinue"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"
+          android:layout_margin="@dimen/_12sdp"
+          android:gravity="center_vertical|end"
+          android:background="@drawable/button_background"
+          android:padding="@dimen/_6sdp"
+          >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tvContinue"
+             android:fontFamily="@font/nunito_medium"
+             android:textColor="@color/white"
+             android:textSize="@dimen/_12sdp"
+             android:text="@string/continue_1"
+             android:layout_marginEnd="@dimen/_10sdp"
+             />
+         <ImageView
+             android:id="@+id/ivContinue"
+             android:layout_width="@dimen/_30sdp"
+             android:layout_height="@dimen/_30sdp"
+             android:layout_alignParentEnd="true"
+             android:padding="@dimen/_6sdp"
+             android:src="@drawable/ic_right" />
+
+      </LinearLayout>
+
+
+   </com.oncobuddy.app.utils.container_classes.SlidingLinearLayout>
+   </ScrollView>
+      <include android:id="@+id/layoutProgress"
+          layout="@layout/progress_bar"/>
+
+   </com.oncobuddy.app.utils.container_classes.SlidingRelativeLayout>
+
+</layout>

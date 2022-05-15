@@ -1,0 +1,3 @@
+include ':dabcustomtagslibrary'
+include ':app'
+rootProject.name = "Fourcare"

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_white">
+
+        <ImageView
+            android:id="@+id/ivDoctorImage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_my_doctors" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_toEndOf="@+id/ivDoctorImage">
+
+            <TextView
+                android:id="@+id/tvDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_14sdp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Dr Sharmila"
+                android:textColor="@color/reports_blue_title"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:id="@+id/tvQualification"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvDoctorName"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Msc Physiotherapy"
+                android:textColor="@color/reports_blue_title"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvSpeciality"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_below="@+id/tvQualification"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Physiotherapist"
+                android:textColor="@color/reports_blue_title"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_below="@+id/tvSpeciality"
+                android:fontFamily="@font/nunito_medium"
+                android:text="5 Years Experience"
+                android:textColor="@color/reports_blue_title"
+                android:textSize="@dimen/_10sdp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_below="@+id/tvExperience"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/extra_rounded_blue_bg"
+                android:text="Book Consultation"
+                android:paddingStart="@dimen/_14sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

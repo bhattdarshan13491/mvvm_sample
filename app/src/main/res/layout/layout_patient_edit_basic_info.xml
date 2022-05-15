@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linBasicInfoContainer"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/ic_user_image" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_update_profile_pic"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Name"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivUser"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_person" />
+
+            <EditText
+                android:id="@+id/edFullName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ."
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivUser"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/mobile_no"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivPhone"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mobile_no" />
+
+            <EditText
+                android:id="@+id/edPhoneNumber"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivPhone"
+                android:clickable="true"
+                android:digits="0123456789"
+                android:focusable="false"
+                android:hint="Mobile No"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/email"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivemail"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_email_blue" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivemail"
+                android:hint="Email ID"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/dob"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivDob"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_calender_blue" />
+
+            <EditText
+                android:id="@+id/edDob"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivDob"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/dob"
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/gender"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivGender"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_gender" />
+
+            <EditText
+                android:id="@+id/edGender"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivGender"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/gender"
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/aadhar"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivAadhar"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_aadhar" />
+
+            <EditText
+                android:id="@+id/edAadhar"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivAadhar"
+                android:digits="0123456789"
+                android:hint="@string/aadhar"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="14"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/height"/>
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivHeight"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_height_blue" />
+
+            <EditText
+                android:id="@+id/edHeight"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivHeight"
+                android:hint="@string/height"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="inch"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditProfileTitle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/weight"/>
+
+
+        <RelativeLayout
+            style="@style/NovCommonEditTextBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/ivWeight"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_weight" />
+
+            <EditText
+                android:id="@+id/edWeight"
+                style="@style/NovCommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivWeight"
+                android:hint="@string/weight"
+                android:maxLength="3"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="kg"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</layout>
